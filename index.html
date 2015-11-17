@@ -1,1 +1,46 @@
-Hello World
+
+<!DOCTYPE html>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+  <link href='style.css' rel='stylesheet' type='text/css'>
+
+
+
+
+  <body>
+
+      <h1>Infant Mortality Rate by Country</h1>
+      <p>Note: Probability of dying during the first month of life, expressed per 1,000 live births. Source: <a href="http://data.unicef.org/child-mortality/neonatal.html">UNICEF</a>, 2015.  Roll-over a line to see which Country is plotted.</p>
+
+      <div id="linechart"></div>
+
+      <h1>Preterm Birth Rate and Infant Mortality Rate</h1>
+      <p>A scatter plot comparing the infant mortality rate to the percentage of born preterm.</p>
+      <p id="note">Note: Infant Mortality Rate is the probability of dying between birth and exactly 1 year of age, expressed per 1,000 live births. Source: <a href="http://data.unicef.org/">UNICEF</a>, 2015</p>
+
+      <div id="scatter"></div>
+
+
+
+      <h1>Infant Mortality Rates by State</h1>
+
+      <p>Source: <a href="http://www.cdc.gov/nchs/deaths.htm">CDC</a>. This data is from 2011-2012.</p>
+
+      <div id="map"></div>
+
+
+
+
+
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <script src="//d3js.org/queue.v1.min.js"></script>
+    <script src="d3-legend.min.js"></script>
+    <script src="//d3js.org/topojson.v1.min.js"></script>
+    <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+    <script src="tooltip.js"></script>
+    <script src="mapusa.js"></script>
+    <script src="linechart.js"></script>
+    <script src="scatter.js"></script>
+
+  </body>
+</html>

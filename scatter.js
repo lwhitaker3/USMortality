@@ -1,5 +1,5 @@
 var width1 = 700;
-var height1 = 600;
+var height1 = 400;
 var margin1 = {top: 20, right: 0, bottom: 50, left: 50};
 
 
@@ -30,53 +30,40 @@ var tooltip = d3.select("body")
   .append("div")
   .attr("class", "tooltip1");
 
-d3.csv("countrydata.csv", function(data) {
+  d3.select("button#data1").classed("selected", true);
 
-  xScale1.domain([
-    d3.min(data, function(d) {
-      return +d.imr;
-    }) - 1,
-    d3.max(data, function (d) {
-      return +d.imr;
-    }) + 2
-  ]);
-
-  yScale1.domain([
-    d3.min(data, function(d) {
-      return +d.preterm;
-    }) - 5,
-    d3.max(data, function (d) {
-      return +d.preterm;
-    }) + 2
-  ]);
-
-  var circles = svg3.selectAll("circle")
-    .data(data)
-    .enter()
-    .append("circle")
-    .attr("class", "dots");
-
-  circles.attr("cx", function(d) {
-      return xScale1(+d.imr);
-    })
-    .attr("cy", function(d) {
-      return yScale1(+d.preterm);
-    })
-    .attr("r", dotRadius)
-    .attr("fill", function(d,i){
-      if (d.country === 'World'){
-        return "#FF0099";
-      }else{
-        return "#0099FF";
-      }
-    })
-    .attr("opacity", .7);
-
-    circles
-      .on("mouseover", mouseoverFunc)
-      .on("mousemove", mousemoveFunc)
-      .on("mouseout", mouseoutFunc);
-
+    d3.select("#data1")
+        .on("click", function(d,i) {
+            selected = "first"
+            draw(data, selected);
+            var thisButton = d3.select(this);
+            d3.selectAll("button").classed("selected", false);
+            thisButton.classed("selected", true);
+        });
+    d3.select("#data2")
+        .on("click", function(d,i) {
+            selected = "second"
+            draw(data, selected);
+            var thisButton = d3.select(this);
+            d3.selectAll("button").classed("selected", false);
+            thisButton.classed("selected", true);
+        });
+    d3.select("#data3")
+        .on("click", function(d,i) {
+            selected = "third"
+            draw(data, selected);
+            var thisButton = d3.select(this);
+            d3.selectAll("button").classed("selected", false);
+            thisButton.classed("selected", true);
+        });
+    d3.select("#data4")
+        .on("click", function(d,i) {
+            selected = "fourth"
+            draw(data, selected);
+            var thisButton = d3.select(this);
+            d3.selectAll("button").classed("selected", false);
+            thisButton.classed("selected", true);
+        });
 
   svg3.append("g")
     .attr("class", "x axis")
@@ -88,27 +75,124 @@ d3.csv("countrydata.csv", function(data) {
     .attr("transform", "translate(" + (margin1.left) + ",0)")
     .call(yAxis1);
 
-  svg3.append("text")
-    .attr("class", "xlabel")
-    .attr("transform", "translate(" + (width1 / 2) + " ," +
-          (height1-20) + ")")
-    .style("text-anchor", "middle")
-    .attr("dy", "12")
-    .text("Under 5 Mortality Rate");
+  queue()
+    .defer(d3.csv, "country_data.csv")
+    .await(load);
 
-  svg3.append("text")
-    .attr("class", "ylabel")
-    .attr("transform", "translate(" + margin1.right + " ," +
-          (height1/2) + ")")
-    .style("text-anchor", "middle")
-    .attr("dx", "-300")
-    .attr("dy", "12")
-    .attr("transform", "rotate(-90)")
-    .text("Percent of Births Registered");
+  var data = [];
+  var selected = "first";
+
+  function load(error, dataset) {
+  if (error) {
+    console.log(error);
+  } else {
+    console.log(data1);
+    data = dataset;
+
+    draw(data, selected);
+  }
+  }
+  // This function is used to draw and update the data. It takes different data each time.
+
+  function draw(data, selected) {
+
+    console.log(data);
+    xScale1.domain([
+      d3.min(data, function(d) {
+        return +d.imr;
+      }) - 2,
+      d3.max(data, function (d) {
+        return +d.imr;
+      }) + 2
+    ]);
+
+    yScale1.domain([
+      d3.min(data, function(d) {
+        if (selected == "first"){
+          return +d.preterm;
+        }else if (selected == "second"){
+          return +d.GINI;
+        }else if (selected == "third"){
+          return +d.health;
+        }else if (selected == "fourth"){
+          return +d.adolecent;
+        }
+      }) - 2,
+      d3.max(data, function (d) {
+        if (selected == "first"){
+          return +d.preterm;
+        }else if (selected == "second"){
+          return +d.GINI;
+        }else if (selected == "third"){
+          return +d.health;
+        }else if (selected == "fourth"){
+          return +d.adolecent;
+        }
+      }) + 2
+    ]);
+
+
+    // data join
+    var circles = svg3.selectAll("circle")
+        .data(data, function(d) {return d.country;}); // key function!
+
+
+    // enter and create new ones if needed
+    circles
+      .enter()
+      .append("circle")
+      .attr("class", "dots")
+      .append("title")
+      .text(function(d){
+          return d.country
+      });
+
+
+    circles
+      .transition()
+      .duration(2000)
+      .attr("cx", function(d) {
+        return xScale1(+d.imr);
+      })
+      .attr("cy", function(d) {
+        if (selected == "first"){
+          return yScale1(+d.preterm);
+        }else if (selected == "second"){
+          return yScale1(+d.GINI);
+        }else if (selected == "third"){
+          return yScale1(+d.health);
+        }else if (selected == "fourth"){
+          return yScale1(+d.adolecent);
+        }
+      })
+      .attr("r", function() {
+          return dotRadius;
+      });
+
+
+      // fade out the ones that aren't in the current data set
+    circles
+      .exit()
+      .transition()
+      .duration(1000)
+      .style("opacity", 0)
+      .remove();
+
+      // Update the axes - also animated. this is really easy.
+     svg3.select(".x.axis")
+        .transition()
+        .duration(1000)
+        .call(xAxis1);
+
+      // Update Y Axis
+      svg3.select(".y.axis")
+          .transition()
+          .duration(1000)
+          .call(yAxis1);
 
 
 
-});
+  };
 
 
 

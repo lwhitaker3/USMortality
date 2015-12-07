@@ -1,0 +1,309 @@
+@import "settings";
+@import "foundation";
+
+$main_color: purple;
+$dark_grey: #3D3D3D;
+
+header{
+  h1{
+    text-align: center;
+    color: $white;
+    margin-top: 0;
+    padding-top: 100px;
+    font-size: 6rem;
+  }
+  h2{
+    text-align: center;
+    color: $white;
+    margin-top: 0;
+    padding-top: 100px;
+    font-size: 3rem;
+  }
+  height: 100%;
+  min-height: 500px;
+  .hero_image{
+    height: 100%;
+    background-image: url("../img/hero_image-01.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.hero_image_secondary{
+  &#hero_2{
+    background-image: url("../img/hero_image-01.png");
+  }
+  &#hero_3{
+    background-image: url("../img/hero_image-01.png");
+  }
+  &#hero_4{
+    background-image: url("../img/hero_image-01.png");
+  }
+  height: 300px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer{
+  background-color: $dark_grey;
+  a{
+    color: $white;
+  }
+}
+
+.container {
+  width: 890px;
+}
+
+#graphic {
+  position: relative;
+  padding-top: 60px;
+}
+
+p {
+  padding: 20px;
+}
+
+#sections {
+  position: relative;
+  display: inline-block;
+  width: 250px;
+  top: 0px;
+  z-index: 90;
+  padding-bottom: 20px;
+}
+
+.step {
+  margin-bottom: 200px;
+  font-family: "TiemposTextWeb-Regular","Georgia";
+  font-size: 16px;
+  line-height: 23px;
+  color: #767678;
+}
+
+#sections .title {
+  font-family: Arial,Helvetica,"san-serif";
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 2px;
+  color: #262626;
+  line-height: 1.2em;
+}
+
+#extra-space {
+  height: 300px;
+}
+
+#vis {
+  display: none;
+  position: fixed;
+  top: 60px;
+  z-index: 1;
+  margin-left: 0;
+  font-size: 10px;
+}
+
+#page_header {
+  position: relative;
+  margin: 20px;
+  z-index: 2;
+  width: 600px;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: none;
+  shape-rendering: crispEdges;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: none;
+  shape-rendering: crispEdges;
+}
+
+path.line {
+  fill: none;
+  stroke-width: 1px;
+  stroke-opacity: 80%;
+}
+
+.line.normal {
+  stroke: gray;
+}
+
+.line.unfocused{
+  stroke-opacity: 40%;
+}
+
+.line.focused {
+  stroke-width: 2px;
+  stroke-opacity: 100%;
+  stroke: orange;
+}
+
+.line.hidden {
+  stroke: pink;
+}
+.container {
+  width: 890px;
+}
+
+
+
+#vis1 {
+  display: inline-block;
+  z-index: 1;
+  margin-left: 0;
+  font-size: 10px;
+}
+
+
+.selected{
+  background-color: grey;
+  color: white;
+  border: none;
+}
+
+.states {
+    stroke: #fff;
+    stroke-width:1px;
+}
+.states:hover{
+  opacity: .6;
+}
+
+.legendLinear text {
+    font-size: 12px;
+}
+
+.tooltip2 {
+  position: absolute;
+  z-index: 10;
+  background-color:rgba(255,255,255,0.8);
+  margin: 5px;
+  padding: 5px;
+  font-size: 13px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #D3D3D3;
+  stroke-width: 1px;
+}
+
+.line {
+  fill: none;
+  stroke-width: 1px;
+  stroke-opacity: 70%;
+}
+
+.line.unfocused{
+  stroke-opacity: 40%;
+  stroke: #999999;
+}
+
+.line.focused {
+  fill: none;
+  stroke-width: 3px;
+  stroke-opacity: 100%;
+  stroke: #FF9900;
+}
+
+.axis text {
+  font-family: sans-serif;
+  font-size: 11px;
+}
+
+.tooltip1 {
+  position: absolute;
+  z-index: 10;
+}
+
+.tooltip1 p {
+  background-color: rgba(255,255,255,.8);
+  border: 2px #d3d3d3 solid;
+  font-size: 15px;
+  padding: 4px;
+}
+
+.title{
+  font-size: 20px;
+  color: #0099ff;
+}
+
+.labels{
+  font-family: sans-serif;
+  font-size: 11px;
+  fill: black;
+}
+.xlabel{
+  font-family: sans-serif;
+  font-size: 15px;
+  fill: #474747;
+}
+.ylabel{
+  font-family: sans-serif;
+  font-size: 15px;
+  fill: #474747;
+}
+.dots{
+  fill: #0099FF;
+  opacity: .8;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #efefef;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
+
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {
+  display: none;
+}

@@ -1,19 +1,98 @@
-
-<!DOCTYPE html>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
-  <link href='style.css' rel='stylesheet' type='text/css'>
-
-
-
-
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foundation</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+  </head>
   <body>
 
-      <h1>Infant Mortality Rate by Country</h1>
-      <p>Note: Probability of dying during the first month of life, expressed per 1,000 live births. Source: <a href="http://data.unicef.org/child-mortality/neonatal.html">UNICEF</a>, 2015.  Roll-over a line to see which Country is plotted.</p>
+    <header>
+      <div class="hero_image">
+        <div class="row">
+            <h1>US Infant Mortality Problem</h1>
+            <h2>Every year in the United States 6.3 in every 1,000 babies will not make it to their first birthday. This makes the infant mortality rate in the United States the highest of any high income country in the world</h2>
+        </div>
+      </div>
+    </header>
 
-      <div id="linechart"></div>
+    <nav>
+      <div data-magellan-expedition="fixed">
+        <div class="row">
+        <dl class="sub-nav">
+          <dd data-magellan-arrival="section1"><a href="#section1">World</a></dd>
+          <dd data-magellan-arrival="section2"><a href="#section2">High Income Developed Countries</a></dd>
+          <dd data-magellan-arrival="section3"><a href="#section3">Where the US Falls Short</a></dd>
+          <dd data-magellan-arrival="section4"><a href="#section4">The United States</a></dd>
+        </dl>
+        </div>
+      </div>
+    </nav>
 
+
+    <div class="row">
+      <a name="section1"></a>
+      <div class="row">
+        <h2 data-magellan-destination="section1">World</h2>
+        <p>The information about this section here</p>
+        <h1>Infant Mortality Rate by Country</h1>
+        <p>Note: Probability of dying during the first month of life, expressed per 1,000 live births. Source: <a href="http://data.unicef.org/child-mortality/neonatal.html">UNICEF</a>, 2015.  Roll-over a line to see which Country is plotted.</p>
+      </div>
+      <div class="container">
+        <div id='graphic'>
+          <div id='sections'>
+            <section class="step">
+              <!-- case 0 -->
+              <div class="title">Infant Morality</div>
+              4.5 million children around the world will die before their first birthday.
+            </section>
+            <section class="step">
+              <!-- case 1 -->
+              <div class="title">In the United States</div>
+              6 in every 1000 children die before their first Birthday
+            </section>
+            <section class="step">
+              <!-- case 2 -->
+              <div class="title">Here is where the United States is compared to the world.</div>
+                It looks like the United States is doing very well compared to the rest of the world.
+            </section>
+          </div>
+          <div id='vis1'></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div id="hero_2" class="hero_image_secondary">
+    </div>
+
+    <div class="row">
+      <a name="section2"></a>
+      <h2 data-magellan-destination="section2">High Income Developed Countries</h2>
+
+      <div id="menu">
+        <select>
+        <option value="1960">1960</button>
+        <option value="1990">1990</option>
+        <option value="2015">2015</option>
+        </select>
+    </div>
+
+        <div id="changing_bars">
+        </div>
+
+    </div>
+
+    <div id="hero_3" class="hero_image_secondary">
+    </div>
+
+    <div class="row">
+      <a name="section3"></a>
+      <h2 data-magellan-destination="section3">Where the US Falls Short</h2>
       <h1>Infant Mortality Rate in High Income Countries</h1>
       <p>A scatter plot comparing the infant mortality rate to other factors.</p>
       <p id="note">Note: Infant Mortality Rate is the probability of dying between birth and exactly 1 year of age, expressed per 1,000 live births. Source: <a href="http://data.unicef.org/">UNICEF</a>, 2015</p>
@@ -23,33 +102,104 @@
       <button id="data2">GINI Index</button>
       <button id="data3">Health Care Expenditures</button>
       <button id="data4">Adolecent Birth Rate</button>
+      <button id="data5">Obesity</button>
+      <button id="data6">Maternal Mortality</button>
       </div>
-
+      <div id="small_multiples"></div>
       <div id="scatter"></div>
+    </div>
 
+    <div id="hero_4" class="hero_image_secondary">
+    </div>
 
-
-
-
+    <div class="row">
+      <a name="section4"></a>
+      <h2 data-magellan-destination="section4">The United States</h2>
       <h1>Infant Mortality Rates by State</h1>
 
       <p>Source: <a href="http://www.cdc.gov/nchs/deaths.htm">CDC</a>. This data is from 2011-2012.</p>
-
+      <div id="imrrace"></div>
+      <div id="imrterm"></div>
+      <div id="imrage"></div>
+      <div id="prenatalrace"></div>
+      <div id="prenatalage"></div>
+      <div id="causes"></div>
       <div id="map"></div>
+      <div id="state_data"></div>
+
+    </div>
+
+    <div id="tooltiptest"></div>
+
+
+    <footer>
+      <div class="row">
+          <p>Graphic by: Louise Whitaker</p>
+          <a href="http://lwhitaker.com">lwhitaker.com</a>
+          <p>Sources:</p>
+          <ul>
+            <li><a href="http://data.unicef.org/child-mortality/under-five.html">http://data.unicef.org/child-mortality/under-five.html</a></li>
+            <li><a href="http://www.who.int/pmnch/media/news/2012/preterm_birth_report/en/index5.html">http://www.who.int/pmnch/media/news/2012/preterm_birth_report/en/index5.html</a></li>
+            <li><a href="https://www.cia.gov/library/publications/the-world-factbook/rankorder/rawdata_2172.txt">https://www.cia.gov/library/publications/the-world-factbook/rankorder/rawdata_2172.txt</a></li>
+            <li><a href="http://data.worldbank.org/indicator/SP.ADO.TFRT/countries">http://data.worldbank.org/indicator/SP.ADO.TFRT/countries</a></li>
+            <li><a href="http://data.worldbank.org/indicator/SH.XPD.TOTL.ZS">http://data.worldbank.org/indicator/SH.XPD.TOTL.ZS</a></li>
+            <li><a href="http://apps.who.int/iris/bitstream/10665/194254/1/9789241565141_eng.pdf?ua=1">http://apps.who.int/iris/bitstream/10665/194254/1/9789241565141_eng.pdf?ua=1</a></li>
+            <li><a href="https://www.cia.gov/library/publications/the-world-factbook/rankorder/2228rank.html">https://www.cia.gov/library/publications/the-world-factbook/rankorder/2228rank.html</a></li>
+            <li><a href="http://www.cdc.gov/nchs/data/nvsr/nvsr64/nvsr64_09.pdf">http://www.cdc.gov/nchs/data/nvsr/nvsr64/nvsr64_09.pdf</a></li>
+            <li><a href="http://www.cdc.gov/nchs/data/nvsr/nvsr64/nvsr64_01.pdf">http://www.cdc.gov/nchs/data/nvsr/nvsr64/nvsr64_01.pdf</a></li>
+            <li><a href="http://www.cdc.gov/ncbddd/birthdefects/facts.html">http://www.cdc.gov/ncbddd/birthdefects/facts.html</a></li>
+            <li><a href="http://www.cdc.gov/nchs/fastats/birthweight.htm">http://www.cdc.gov/nchs/fastats/birthweight.htm</a></li>
+            <li><a href="http://emedicine.medscape.com/article/976034-overview#a6">http://emedicine.medscape.com/article/976034-overview#a6</a></li>
+            <li><a href="http://www.marchofdimes.org/Peristats/ViewSubtopic.aspx?reg=02&top=5&stop=27&lev=1&slev=4&obj=1">http://www.marchofdimes.org/Peristats/ViewSubtopic.aspx?reg=02&top=5&stop=27&lev=1&slev=4&obj=1</a></li>
+            <li><a href="http://www.savethechildren.org/atf/cf/%7B9def2ebe-10ae-432c-9bd0-df91d2eba74a%7D/SOWM_2015.PDF">http://www.savethechildren.org/atf/cf/%7B9def2ebe-10ae-432c-9bd0-df91d2eba74a%7D/SOWM_2015.PDF</a></li>
+            <li><a href="http://datacenter.kidscount.org/data/tables/6051-infant-mortality#detailed/3/10,55-56,58-61,64-77,79-84,86,88-94,96-109,9428-9429/false/36,133,11,1/any/12719">http://datacenter.kidscount.org/data/tables/6051-infant-mortality#detailed/3/10,55-56,58-61,64-77,79-84,86,88-94,96-109,9428-9429/false/36,133,11,1/any/12719</a></li>
+            <li><a href="http://kff.org/other/state-indicator/teen-birth-rate-per-1000/#note-1">http://kff.org/other/state-indicator/teen-birth-rate-per-1000/#note-1</a></li>
+            <li><a href="http://kff.org/other/state-indicator/preterm-births-by-raceethnicity/">http://kff.org/other/state-indicator/preterm-births-by-raceethnicity/</a></li>
+            <li><a href="http://kff.org/womens-health-policy/state-indicator/abortion-rate/">http://kff.org/womens-health-policy/state-indicator/abortion-rate/</a></li>
+            <li><a href="http://www.guttmacher.org/pubs/StateUP10.pdf">http://www.guttmacher.org/pubs/StateUP10.pdf</a></li>
+            <li><a href="http://kff.org/other/state-indicator/birth-rate-per-1000/">http://kff.org/other/state-indicator/birth-rate-per-1000/</a></li>
+            <li><a href="http://kff.org/other/state-indicator/infant-death-rate/">http://kff.org/other/state-indicator/infant-death-rate/</a></li>
+            <li><a href="http://kff.org/other/state-indicator/health-spending-per-capita/">http://kff.org/other/state-indicator/health-spending-per-capita/</a></li>
+            <li><a href="http://kff.org/other/state-indicator/children-0-18/">http://kff.org/other/state-indicator/children-0-18/</a></li>
+            <li><a href="http://kff.org/other/state-indicator/poverty-rate-by-age/">http://kff.org/other/state-indicator/poverty-rate-by-age/</a></li>
+            <li><a href="http://www.cdc.gov/obesity/data/prevalence-maps.html">http://www.cdc.gov/obesity/data/prevalence-maps.html</a></li>
+            <li><a href="https://www.census.gov/content/dam/Census/library/publications/2014/acs/acsbr13-02.pdf">https://www.census.gov/content/dam/Census/library/publications/2014/acs/acsbr13-02.pdf</a></li>
+          <ul>
+
+
+      </div>
+    </footer>
 
 
 
 
 
+
+
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
     <script src="//d3js.org/d3.v3.min.js"></script>
     <script src="//d3js.org/queue.v1.min.js"></script>
-    <script src="d3-legend.min.js"></script>
+    <script src="js/d3-legend.min.js"></script>
     <script src="//d3js.org/topojson.v1.min.js"></script>
     <script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
-    <script src="tooltip.js"></script>
-    <script src="mapusa.js"></script>
-    <script src="linechart.js"></script>
-    <script src="scatter.js"></script>
-
+    <script src="js/tooltip.js"></script>
+    <script src="js/mapusa.js"></script>
+    <script src="js/scatter.js"></script>
+    <script src="js/small_multiples.js"></script>
+    <script src="js/mfreeman_scroller.js"></script>
+    <script src="js/line_chart.js"></script>
+    <script src="js/changing_bars.js"></script>
+    <script src="js/imr_race.js"></script>
+    <script src="js/imr_term.js"></script>
+    <script src="js/imr_age.js"></script>
+    <script src="js/prenatal_race.js"></script>
+    <script src="js/prenatal_age.js"></script>
+    <script src="js/pie.js"></script>
+    <script src="js/state_data.js"></script>
+    <script src="js/pie_chart_tooltip.js"></script>
   </body>
 </html>

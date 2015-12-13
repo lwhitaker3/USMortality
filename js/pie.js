@@ -1,10 +1,10 @@
 (function(){
-  var width = 960,
-      height = 500,
+  var width = 400,
+      height = 400,
       radius = Math.min(width, height) / 2;
 
   var color = d3.scale.ordinal()
-      .range(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+      .range(["#DB6919","#e9853e","#eea26c","#f3bf9a","#FBD5B9","#fbeade"]);
 
   var arc = d3.svg.arc()
       .outerRadius(radius - 10)
@@ -18,6 +18,11 @@
       .sort(null)
       .value(function(d) { return d.deaths; });
 
+  var tooltip = d3.select("body")
+    .append("div")
+    .attr("class", "tooltip1");
+
+
   var svg = d3.select("#causes").append("svg")
       .attr("width", width)
       .attr("height", height)
@@ -29,18 +34,24 @@
 
     var g = svg.selectAll(".arc")
         .data(pie(data))
-      .enter().append("g")
-        .attr("class", "arc");
+        .enter().append("g")
+        .attr("class", "arc")
+        .call(d3.helper.tooltip(
+         function(d, i){
+           return getContent(d);
+         }
+         ));
 
     g.append("path")
         .attr("d", arc)
         .style("fill", function(d) { return color(d.data.cause); });
 
-    g.append("text")
-        .attr("transform", function(d) { return "translate(" + labelArc.centroid(d) + ")"; })
-        .attr("dy", ".35em")
-        .text(function(d) { return d.data.cause; });
+
   });
+
+  function getContent(d) {
+    return "<p class='tooltipTitle'>" + d.data.cause + ": </p><p class='tooltipText'>" + d.data.deaths + " deaths</p>";
+  }
 
   function type(d) {
     d.deaths = +d.deaths;

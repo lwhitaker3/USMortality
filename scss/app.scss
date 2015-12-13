@@ -1,26 +1,77 @@
+//color variables
+$main_color: #FF9900; //orange
+$light_color: #FBD5B9;
+$dark_color: #DB6919;
+$dark_grey: #52524E;
+$light_grey: #ADADA4;
+$axis_line: #E6E6E6;
+
+
+
+//text variables
+$body_text: 'Roboto', sans-serif;
+$header_text: 'Roboto Slab', serif;
+
 @import "settings";
 @import "foundation";
 
-$main_color: purple;
-$dark_grey: #3D3D3D;
+//overall styles
+body{
+  min-width: 1280px;
+}
+h1{
+  font-family: $header_text;
+  font-weight: 700;
+  color: $dark_color;
+  font-size: 3.5rem;
+}
+h2{
+  font-family: $body_text;
+  font-weight: 300;
+  font-size: 1.3rem;
+  color: $light_grey;
+  padding-top: 50px;
+}
+p{
+  padding: 0;
+  color: $dark_grey;
+}
+button{
+  border-radius: 5px;
+  padding: .5rem 1rem;
+  font-weight: 300;
+}
+.sub-nav{
+  border-bottom: 1px $light_color solid;
+  padding: 4px 0;
+}
+.fixed{
+  padding: 4px 4px 0px 4px;
+}
+ol{
+  font-size: .8rem;
+}
+
 
 header{
-  h1{
-    text-align: center;
-    color: $white;
-    margin-top: 0;
-    padding-top: 100px;
-    font-size: 6rem;
-  }
-  h2{
-    text-align: center;
-    color: $white;
-    margin-top: 0;
-    padding-top: 100px;
-    font-size: 3rem;
-  }
   height: 100%;
   min-height: 500px;
+  h1{
+    color: $white;
+    margin-top: 0;
+    padding-top: 100px;
+    font-size: 4rem;
+  }
+  p{
+    color: $white;
+    margin-top: 0;
+    padding: 30px 0;
+    font-size: 1.5rem;
+    line-height: 1.1;
+  }
+  .textBox{
+    background-color: rgba($dark_grey,.6);
+  }
   .hero_image{
     height: 100%;
     background-image: url("../img/hero_image-01.png");
@@ -31,6 +82,10 @@ header{
 }
 
 .hero_image_secondary{
+  height: 300px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   &#hero_2{
     background-image: url("../img/hero_image-01.png");
   }
@@ -40,99 +95,105 @@ header{
   &#hero_4{
     background-image: url("../img/hero_image-01.png");
   }
-  height: 300px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 footer{
   background-color: $dark_grey;
+
+  p{
+    color: black;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
   a{
-    color: $white;
+    color: lighten($light_grey, 20);
+    &:hover{
+      color: $dark_color
+    }
   }
 }
 
-.container {
-  width: 890px;
+//general graph styles
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: none;
+  shape-rendering: crispEdges;
+  stroke: $axis_line;
+  stroke-width: 1px;
 }
+.axis text {
+  font-family: $body_text;
+  fill: $dark_grey;
+  font-size: 11px;
+}
+.tick text{
+  fill: $light_grey;
+
+}
+.usFocus,
+.bar.usFocus,
+.dots.usFocus{
+  fill: $main_color;
+}
+.bar.hoverFocus,
+.dots.hoverFocus{
+  fill: $dark_grey;
+  opacity: 1;
+}
+
+.UnitedStates{
+  fill: $main_color;
+}
+.state{
+  fill: $dark_color;
+}
+
+//first graph
 
 #graphic {
   position: relative;
   padding-top: 60px;
 }
 
-p {
-  padding: 20px;
-}
 
 #sections {
   position: relative;
-  display: inline-block;
+  //display: inline-block;
   width: 250px;
   top: 0px;
+  left: 600px;
   z-index: 90;
   padding-bottom: 20px;
+  .step {
+    margin-bottom: 200px;
+    font-family: $body_text;
+    font-size: 16px;
+    line-height: 23px;
+    color: $light_grey;
+  }
+  .title {
+    font-family: $body_text;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 2px;
+    color: $dark_grey;
+    line-height: 1.2em;
+  }
+}
+#spacer{
+  height: 200px;
 }
 
-.step {
-  margin-bottom: 200px;
-  font-family: "TiemposTextWeb-Regular","Georgia";
-  font-size: 16px;
-  line-height: 23px;
-  color: #767678;
-}
-
-#sections .title {
-  font-family: Arial,Helvetica,"san-serif";
-  font-size: 16px;
-  font-weight: bold;
-  margin-bottom: 2px;
-  color: #262626;
-  line-height: 1.2em;
-}
-
-#extra-space {
-  height: 300px;
-}
-
-#vis {
-  display: none;
-  position: fixed;
-  top: 60px;
-  z-index: 1;
-  margin-left: 0;
-  font-size: 10px;
-}
-
-#page_header {
-  position: relative;
-  margin: 20px;
-  z-index: 2;
-  width: 600px;
-}
-.axis path,
-.axis line {
-  fill: none;
-  stroke: none;
-  shape-rendering: crispEdges;
-}
-
-.axis path,
-.axis line {
-  fill: none;
-  stroke: none;
-  shape-rendering: crispEdges;
-}
-
-path.line {
-  fill: none;
-  stroke-width: 1px;
-  stroke-opacity: 80%;
-}
+// path.line {
+//   fill: none;
+//   stroke-width: 1px;
+//   //stroke-opacity: 80%;
+// }
 
 .line.normal {
-  stroke: gray;
+  stroke: $light_grey;
 }
 
 .line.unfocused{
@@ -145,21 +206,14 @@ path.line {
   stroke: orange;
 }
 
-.line.hidden {
-  stroke: pink;
-}
-.container {
-  width: 890px;
+
+.bar {
+  fill: $light_grey;
+  &:hover{
+    fill: $dark_grey;
+  }
 }
 
-
-
-#vis1 {
-  display: inline-block;
-  z-index: 1;
-  margin-left: 0;
-  font-size: 10px;
-}
 
 
 .selected{
@@ -180,21 +234,7 @@ path.line {
     font-size: 12px;
 }
 
-.tooltip2 {
-  position: absolute;
-  z-index: 10;
-  background-color:rgba(255,255,255,0.8);
-  margin: 5px;
-  padding: 5px;
-  font-size: 13px;
-}
 
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #D3D3D3;
-  stroke-width: 1px;
-}
 
 .line {
   fill: none;
@@ -214,22 +254,9 @@ path.line {
   stroke: #FF9900;
 }
 
-.axis text {
-  font-family: sans-serif;
-  font-size: 11px;
-}
 
-.tooltip1 {
-  position: absolute;
-  z-index: 10;
-}
 
-.tooltip1 p {
-  background-color: rgba(255,255,255,.8);
-  border: 2px #d3d3d3 solid;
-  font-size: 15px;
-  padding: 4px;
-}
+
 
 .title{
   font-size: 20px;
@@ -241,42 +268,63 @@ path.line {
   font-size: 11px;
   fill: black;
 }
-.xlabel{
-  font-family: sans-serif;
-  font-size: 15px;
-  fill: #474747;
-}
-.ylabel{
-  font-family: sans-serif;
-  font-size: 15px;
-  fill: #474747;
-}
+
 .dots{
-  fill: #0099FF;
-  opacity: .8;
+  fill: $light_grey;
+  opacity: .6;
+}
+.tooltip1 {
+  position: absolute;
+  z-index: 10;
 }
 
+.tooltip1 p {
+  background-color: rgba(255,255,255,.95);
+  border: 1px $dark_grey solid;
+  border-radius: 2px;
+  color: $dark_grey;
+  font-family: $body_text;
+  font-size: 13px;
+  padding: 4px;
+}
+.tooltip2 {
+  position: absolute;
+  z-index: 10;
+  background-color:rgba(255,255,255,0.95);
+  border: 1px $dark_grey solid;
+  border-radius: 2px;
+  color: $dark_grey;
+  margin: 5px;
+  padding: 5px;
+  font-family: $body_text;
+  font-size: 13px;
+}
+.tooltipText{
+  color: $light_grey;
+}
 .d3-tip {
   line-height: 1;
-  font-weight: bold;
   padding: 12px;
-  background: rgba(0, 0, 0, 0.8);
-  color: #efefef;
+  background-color:rgba(255,255,255,0.95);
+  color: $dark_grey;
+  border: 1px $dark_grey solid;
   border-radius: 2px;
+  &:after{
+    box-sizing: border-box;
+    display: inline;
+    font-family: $body_text;
+    font-size: 13px;
+    width: 100%;
+    line-height: 1;
+    background-color:rgba(255,255,255,0.8);
+    content: "\25BC";
+    position: absolute;
+    text-align: center;
+  }
 }
 
 /* Creates a small triangle extender for the tooltip */
-.d3-tip:after {
-  box-sizing: border-box;
-  display: inline;
-  font-size: 10px;
-  width: 100%;
-  line-height: 1;
-  color: rgba(0, 0, 0, 0.8);
-  content: "\25BC";
-  position: absolute;
-  text-align: center;
-}
+
 
 /* Style northward tooltips differently */
 .d3-tip.n:after {
@@ -284,26 +332,50 @@ path.line {
   top: 100%;
   left: 0;
 }
-
-.bar {
-  fill: steelblue;
+.tooltipTitle{
+  line-height: 1;
+  font-size: 1.3rem;
+  color: $dark_grey;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+.tooltipText{
+  line-height: 1;
+  color: $dark_color;
+  margin-top: 0;
+  margin-bottom: 4px;
 }
 
-.bar:hover {
-  fill: brown;
-}
+
 
 .axis {
   font: 10px sans-serif;
 }
 
-.axis path,
-.axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
+.heightButton{
+  height: 55px;
+  box-sizing: border-box;
 }
 
-.x.axis path {
-  display: none;
+h3{
+  margin-top: 10px;
+  color: $dark_color
+}
+
+.row .row{
+  margin: 0;
+}
+
+
+circle:hover {
+  fill: $dark_grey;
+  opacity:1;
+}
+
+line.grid {
+  stroke: #eee;
+}
+
+line.between {
+  stroke: black;
 }

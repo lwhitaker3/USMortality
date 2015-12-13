@@ -1,169 +1,169 @@
 factor,country,percent
-imr,Australia,3
-imr,Austria,2.9
-imr,Belgium,3.3
-imr,Canada,4.3
-imr,Denmark,2.9
-imr,Finland,1.9
-imr,France,3.5
-imr,Germany,3.1
-imr,Greece,3.6
-imr,Iceland,1.6
-imr,Ireland,3
-imr,Israel,3.2
-imr,Italy,2.9
-imr,Japan,2
-imr,Netherlands,3.2
-imr,New Zealand,4.7
-imr,Norway,2
-imr,Portugal,3
-imr,Slovenia,2.1
-imr,Spain,3.5
-imr,Sweden,2.4
-imr,Switzerland,3.4
-imr,United Kingdom,3.5
-imr,United States,5.6
-preterm,Australia,7.6
-preterm,Austria,10.9
-preterm,Belgium,7.9
-preterm,Canada,7.8
-preterm,Denmark,6.7
-preterm,Finland,5.5
-preterm,France,6.7
-preterm,Germany,9.2
-preterm,Greece,6.6
-preterm,Iceland,6.5
-preterm,Ireland,6.4
-preterm,Israel,8
-preterm,Italy,6.5
-preterm,Japan,5.9
-preterm,Netherlands,8
-preterm,New Zealand,7.6
-preterm,Norway,6
-preterm,Portugal,7.7
-preterm,Slovenia,7.6
-preterm,Spain,7.4
-preterm,Sweden,5.9
-preterm,Switzerland,7.4
-preterm,United Kingdom,7.8
-preterm,United States,12
-GINI,Australia,30.3
-GINI,Austria,26.3
-GINI,Belgium,25.9
-GINI,Canada,32.1
-GINI,Denmark,24.8
-GINI,Finland,26.8
-GINI,France,30.9
-GINI,Germany,27
-GINI,Greece,34.4
-GINI,Iceland,28
-GINI,Ireland,33.9
-GINI,Israel,37.6
-GINI,Italy,31.9
-GINI,Japan,37.6
-GINI,Netherlands,25.1
-GINI,New Zealand,36.2
-GINI,Norway,25
-GINI,Portugal,34.2
-GINI,Slovenia,23.7
-GINI,Spain,34
-GINI,Sweden,23
-GINI,Switzerland,27.8
-GINI,United Kingdom,32.3
-GINI,United States,45
-adolescent_rate,Australia,14.405
-adolescent_rate,Austria,7.379
-adolescent_rate,Belgium,8.3764
-adolescent_rate,Canada,10.0832
-adolescent_rate,Denmark,4.1192
-adolescent_rate,Finland,6.6682
-adolescent_rate,France,9.0482
-adolescent_rate,Germany,6.9604
-adolescent_rate,Greece,7.6694
-adolescent_rate,Iceland,6.48
-adolescent_rate,Ireland,10.7732
-adolescent_rate,Israel,10.0612
-adolescent_rate,Italy,6.0838
-adolescent_rate,Japan,4.1584
-adolescent_rate,Netherlands,4.0888
-adolescent_rate,New Zealand,23.9378
-adolescent_rate,Norway,5.9398
-adolescent_rate,Portugal,10.2834
-adolescent_rate,Slovenia,3.9208
-adolescent_rate,Spain,8.522
-adolescent_rate,Sweden,5.618
-adolescent_rate,Switzerland,3.0578
-adolescent_rate,United Kingdom,15.3342
-adolescent_rate,United States,24.1102
-obesity,Australia,28.6
-obesity,Austria,18.4
-obesity,Belgium,20.2
-obesity,Canada,28
-obesity,Denmark,19.3
-obesity,Finland,20.6
-obesity,France,23.9
-obesity,Germany,20.1
-obesity,Greece,22.9
-obesity,Iceland,22.8
-obesity,Ireland,25.6
-obesity,Israel,25.3
-obesity,Italy,21
-obesity,Japan,3.3
-obesity,Netherlands,19.8
-obesity,New Zealand,29.9
-obesity,Norway,23.1
-obesity,Portugal,20.1
-obesity,Slovenia,25.1
-obesity,Spain,23.7
-obesity,Sweden,20.5
-obesity,Switzerland,19.4
-obesity,United Kingdom,28.1
-obesity,United States,33.7
-heathcare_expenditure,Australia,9.4
-heathcare_expenditure,Austria,11
-heathcare_expenditure,Belgium,11.2
-heathcare_expenditure,Canada,10.9
-heathcare_expenditure,Denmark,10.6
-heathcare_expenditure,Finland,9.4
-heathcare_expenditure,France,11.7
-heathcare_expenditure,Germany,11.3
-heathcare_expenditure,Greece,9.8
-heathcare_expenditure,Iceland,9.1
-heathcare_expenditure,Ireland,8.9
-heathcare_expenditure,Israel,7.2
-heathcare_expenditure,Italy,9.1
-heathcare_expenditure,Japan,10.3
-heathcare_expenditure,Netherlands,12.9
-heathcare_expenditure,New Zealand,9.7
-heathcare_expenditure,Norway,9.6
-heathcare_expenditure,Portugal,9.7
-heathcare_expenditure,Slovenia,9.2
-heathcare_expenditure,Spain,8.9
-heathcare_expenditure,Sweden,9.7
-heathcare_expenditure,Switzerland,11.5
-heathcare_expenditure,United Kingdom,9.1
-heathcare_expenditure,United States,17.1
-mmr,Australia,6
-mmr,Austria,4
-mmr,Belgium,7
-mmr,Canada,7
-mmr,Denmark,6
-mmr,Finland,3
-mmr,France,8
-mmr,Germany,6
-mmr,Greece,3
-mmr,Iceland,3
-mmr,Ireland,8
-mmr,Israel,5
-mmr,Italy,4
-mmr,Japan,5
-mmr,Netherlands,7
-mmr,New Zealand,11
-mmr,Norway,5
-mmr,Portugal,10
-mmr,Slovenia,9
-mmr,Spain,5
-mmr,Sweden,4
-mmr,Switzerland,5
-mmr,United Kingdom,9
-mmr,United States,14
+Infant Mortality Rate,Australia,3
+Infant Mortality Rate,Austria,2.9
+Infant Mortality Rate,Belgium,3.3
+Infant Mortality Rate,Canada,4.3
+Infant Mortality Rate,Denmark,2.9
+Infant Mortality Rate,Finland,1.9
+Infant Mortality Rate,France,3.5
+Infant Mortality Rate,Germany,3.1
+Infant Mortality Rate,Greece,3.6
+Infant Mortality Rate,Iceland,1.6
+Infant Mortality Rate,Ireland,3
+Infant Mortality Rate,Israel,3.2
+Infant Mortality Rate,Italy,2.9
+Infant Mortality Rate,Japan,2
+Infant Mortality Rate,Netherlands,3.2
+Infant Mortality Rate,New Zealand,4.7
+Infant Mortality Rate,Norway,2
+Infant Mortality Rate,Portugal,3
+Infant Mortality Rate,Slovenia,2.1
+Infant Mortality Rate,Spain,3.5
+Infant Mortality Rate,Sweden,2.4
+Infant Mortality Rate,Switzerland,3.4
+Infant Mortality Rate,United Kingdom,3.5
+Infant Mortality Rate,United States,5.6
+Preterm Birth Rate,Australia,7.6
+Preterm Birth Rate,Austria,10.9
+Preterm Birth Rate,Belgium,7.9
+Preterm Birth Rate,Canada,7.8
+Preterm Birth Rate,Denmark,6.7
+Preterm Birth Rate,Finland,5.5
+Preterm Birth Rate,France,6.7
+Preterm Birth Rate,Germany,9.2
+Preterm Birth Rate,Greece,6.6
+Preterm Birth Rate,Iceland,6.5
+Preterm Birth Rate,Ireland,6.4
+Preterm Birth Rate,Israel,8
+Preterm Birth Rate,Italy,6.5
+Preterm Birth Rate,Japan,5.9
+Preterm Birth Rate,Netherlands,8
+Preterm Birth Rate,New Zealand,7.6
+Preterm Birth Rate,Norway,6
+Preterm Birth Rate,Portugal,7.7
+Preterm Birth Rate,Slovenia,7.6
+Preterm Birth Rate,Spain,7.4
+Preterm Birth Rate,Sweden,5.9
+Preterm Birth Rate,Switzerland,7.4
+Preterm Birth Rate,United Kingdom,7.8
+Preterm Birth Rate,United States,12
+GINI Index,Australia,30.3
+GINI Index,Austria,26.3
+GINI Index,Belgium,25.9
+GINI Index,Canada,32.1
+GINI Index,Denmark,24.8
+GINI Index,Finland,26.8
+GINI Index,France,30.9
+GINI Index,Germany,27
+GINI Index,Greece,34.4
+GINI Index,Iceland,28
+GINI Index,Ireland,33.9
+GINI Index,Israel,37.6
+GINI Index,Italy,31.9
+GINI Index,Japan,37.6
+GINI Index,Netherlands,25.1
+GINI Index,New Zealand,36.2
+GINI Index,Norway,25
+GINI Index,Portugal,34.2
+GINI Index,Slovenia,23.7
+GINI Index,Spain,34
+GINI Index,Sweden,23
+GINI Index,Switzerland,27.8
+GINI Index,United Kingdom,32.3
+GINI Index,United States,45
+Adolescent Birth Rate,Australia,14.41
+Adolescent Birth Rate,Austria,7.38
+Adolescent Birth Rate,Belgium,8.38
+Adolescent Birth Rate,Canada,10.08
+Adolescent Birth Rate,Denmark,4.12
+Adolescent Birth Rate,Finland,6.67
+Adolescent Birth Rate,France,9.05
+Adolescent Birth Rate,Germany,6.96
+Adolescent Birth Rate,Greece,7.67
+Adolescent Birth Rate,Iceland,6.48
+Adolescent Birth Rate,Ireland,10.77
+Adolescent Birth Rate,Israel,10.06
+Adolescent Birth Rate,Italy,6.08
+Adolescent Birth Rate,Japan,4.16
+Adolescent Birth Rate,Netherlands,4.09
+Adolescent Birth Rate,New Zealand,23.94
+Adolescent Birth Rate,Norway,5.94
+Adolescent Birth Rate,Portugal,10.28
+Adolescent Birth Rate,Slovenia,3.92
+Adolescent Birth Rate,Spain,8.52
+Adolescent Birth Rate,Sweden,5.62
+Adolescent Birth Rate,Switzerland,3.06
+Adolescent Birth Rate,United Kingdom,15.33
+Adolescent Birth Rate,United States,24.11
+Obesity Prevalence,Australia,28.6
+Obesity Prevalence,Austria,18.4
+Obesity Prevalence,Belgium,20.2
+Obesity Prevalence,Canada,28
+Obesity Prevalence,Denmark,19.3
+Obesity Prevalence,Finland,20.6
+Obesity Prevalence,France,23.9
+Obesity Prevalence,Germany,20.1
+Obesity Prevalence,Greece,22.9
+Obesity Prevalence,Iceland,22.8
+Obesity Prevalence,Ireland,25.6
+Obesity Prevalence,Israel,25.3
+Obesity Prevalence,Italy,21
+Obesity Prevalence,Japan,3.3
+Obesity Prevalence,Netherlands,19.8
+Obesity Prevalence,New Zealand,29.9
+Obesity Prevalence,Norway,23.1
+Obesity Prevalence,Portugal,20.1
+Obesity Prevalence,Slovenia,25.1
+Obesity Prevalence,Spain,23.7
+Obesity Prevalence,Sweden,20.5
+Obesity Prevalence,Switzerland,19.4
+Obesity Prevalence,United Kingdom,28.1
+Obesity Prevalence,United States,33.7
+Heathcare Expenditures,Australia,9.4
+Heathcare Expenditures,Austria,11
+Heathcare Expenditures,Belgium,11.2
+Heathcare Expenditures,Canada,10.9
+Heathcare Expenditures,Denmark,10.6
+Heathcare Expenditures,Finland,9.4
+Heathcare Expenditures,France,11.7
+Heathcare Expenditures,Germany,11.3
+Heathcare Expenditures,Greece,9.8
+Heathcare Expenditures,Iceland,9.1
+Heathcare Expenditures,Ireland,8.9
+Heathcare Expenditures,Israel,7.2
+Heathcare Expenditures,Italy,9.1
+Heathcare Expenditures,Japan,10.3
+Heathcare Expenditures,Netherlands,12.9
+Heathcare Expenditures,New Zealand,9.7
+Heathcare Expenditures,Norway,9.6
+Heathcare Expenditures,Portugal,9.7
+Heathcare Expenditures,Slovenia,9.2
+Heathcare Expenditures,Spain,8.9
+Heathcare Expenditures,Sweden,9.7
+Heathcare Expenditures,Switzerland,11.5
+Heathcare Expenditures,United Kingdom,9.1
+Heathcare Expenditures,United States,17.1
+Maternal Mortality Rate,Australia,6
+Maternal Mortality Rate,Austria,4
+Maternal Mortality Rate,Belgium,7
+Maternal Mortality Rate,Canada,7
+Maternal Mortality Rate,Denmark,6
+Maternal Mortality Rate,Finland,3
+Maternal Mortality Rate,France,8
+Maternal Mortality Rate,Germany,6
+Maternal Mortality Rate,Greece,3
+Maternal Mortality Rate,Iceland,3
+Maternal Mortality Rate,Ireland,8
+Maternal Mortality Rate,Israel,5
+Maternal Mortality Rate,Italy,4
+Maternal Mortality Rate,Japan,5
+Maternal Mortality Rate,Netherlands,7
+Maternal Mortality Rate,New Zealand,11
+Maternal Mortality Rate,Norway,5
+Maternal Mortality Rate,Portugal,10
+Maternal Mortality Rate,Slovenia,9
+Maternal Mortality Rate,Spain,5
+Maternal Mortality Rate,Sweden,4
+Maternal Mortality Rate,Switzerland,5
+Maternal Mortality Rate,United Kingdom,9
+Maternal Mortality Rate,United States,14

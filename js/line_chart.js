@@ -5,13 +5,13 @@
 
     var margin = {
     top: 50,
-    right: 10,
+    right: 40,
     bottom: 70,
-    left: 70
+    left: 40
     };
 
-    var width = 600;
-    var height = 500;
+    var width = 1024;
+    var height = 600;
 
 
     //Set up date formatting and years
@@ -76,7 +76,7 @@
         .append("text")
         .attr("transform", "rotate(-90)")
         .attr("x", -margin.top)
-        .attr("y", -2*margin.left / 3)
+        .attr("y", -2*margin.left/2)
         .attr("dy", "1em")
         .style("text-anchor", "end")
         .attr("class", "label")
@@ -88,7 +88,7 @@
 function draw_lines(data) {
 
     var years = d3.keys(data[0]).slice(1, 65); //
-    console.log(years);
+    //console.log(years);
 
     //Create a new, empty array to hold our restructured dataset
     var dataset = [];
@@ -121,7 +121,7 @@ function draw_lines(data) {
     //console.log(data);
 
     //Uncomment to log the newly restructured dataset to the console
-    console.log(dataset);
+    //console.log(dataset);
 
 
     //Set scale domains - max and min of the years
@@ -229,7 +229,7 @@ var settings = {
 }
 
 function focus_country(country) {
-  console.log("in focus", country);
+  //console.log("in focus", country);
   // unfocus all, then focus one if given a name.
     d3.selectAll("path.line").classed("focused", false);
     if (country) {
@@ -243,21 +243,21 @@ function focus_country(country) {
 
 // ******* Change the onX and onY function for some cases ********
 var update = function(value) {
-  console.log("UPDATE VALUE: " + value);
+  //console.log("UPDATE VALUE: " + value);
   var country = null;
   switch(value) {
     case 0:
-      console.log("in case", value);
+      //console.log("in case", value);
       draw_lines(data1);
       country = null;
       break;
     case 1:
-      console.log("in case 2");
+      //console.log("in case 2");
       country = "United States";
       draw_lines(data1);
       break;
     case 2:
-      console.log("in case 3");
+      //console.log("in case 3");
       country = "United States";
       draw_lines(data2);
       break;
@@ -276,7 +276,7 @@ function load(error, dataset, dataset2) {
   if (error) {
     console.log(error);
   } else {
-    console.log(data1);
+    //console.log(data1);
     data1 = dataset;
     data2 = dataset2; // assign to global
 
@@ -290,7 +290,7 @@ function load(error, dataset, dataset2) {
     scroll(d3.selectAll('.step'));
 
     // Pass the update function to the scroll object
-    console.log(update);
+    //console.log(update);
     scroll.update(update);
   }
 }
@@ -303,7 +303,7 @@ function handleScroll(){
   var containerRect = container.getBoundingClientRect();
   var graphRect = graph.getBoundingClientRect();
   var graphHeight = graphRect.bottom - graphRect.top;
-  //console.log(containerRect.bottom, graphHeight)
+  ////console.log(containerRect.bottom, graphHeight)
   if (containerRect.top > 0){
     //above
     $("#vis1").css({

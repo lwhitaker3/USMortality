@@ -1,12 +1,7 @@
 gestation,imr
-All gestational ages,5.6
-Preterm (under 37),34.7
-Early preterm (under 34) ,99.5
-Under 32,163.71
-32-33,16.02
-Late preterm (34-36),7.23
-Term (37-41),2.19
-Early term (37-38) ,3.01
-Full term (39-40),1.85
-Late term (41),1.8
-Postterm (42 or over),2.39
+Under 34,99.5
+34-36,7.23
+37-38,3.01
+39-40,1.85
+41,1.8
+42 or over,2.39

@@ -1,56 +1,55 @@
 factor,state,number
-Infant_Morality,United States,6
-Infant_Morality,Alabama,8.6
-Infant_Morality,Alaska,5.8
-Infant_Morality,Arizona,5.3
-Infant_Morality,Arkansas,7.9
-Infant_Morality,California,4.8
-Infant_Morality,Colorado,5.1
-Infant_Morality,Connecticut,4.8
-Infant_Morality,Delaware,6.4
-Infant_Morality,District of Columbia,6.7
-Infant_Morality,Florida,6.1
-Infant_Morality,Georgia,7
-Infant_Morality,Hawaii,6.4
-Infant_Morality,Idaho,5.6
-Infant_Morality,Illinois,6
-Infant_Morality,Indiana,7.2
-Infant_Morality,Iowa,4.3
-Infant_Morality,Kansas,6.5
-Infant_Morality,Kentucky,6.4
-Infant_Morality,Louisiana,8.7
-Infant_Morality,Maine,7.1
-Infant_Morality,Maryland,6.6
-Infant_Morality,Massachusetts,4.2
-Infant_Morality,Michigan,7.1
-Infant_Morality,Minnesota,5.1
-Infant_Morality,Mississippi,9.6
-Infant_Morality,Missouri,6.5
-Infant_Morality,Montana,5.6
-Infant_Morality,Nebraska,5.2
-Infant_Morality,Nevada,5.3
-Infant_Morality,New Hampshire,5.6
-Infant_Morality,New Jersey,4.5
-Infant_Morality,New Mexico,5.3
-Infant_Morality,New York,4.9
-Infant_Morality,North Carolina,7
-Infant_Morality,North Dakota,6
-Infant_Morality,Ohio,7.3
-Infant_Morality,Oklahoma,6.7
-Infant_Morality,Oregon,4.9
-Infant_Morality,Pennsylvania,6.7
-Infant_Morality,Rhode Island,6.5
-Infant_Morality,South Carolina,6.9
-Infant_Morality,South Dakota,6.5
-Infant_Morality,Tennessee,6.8
-Infant_Morality,Texas,5.8
-Infant_Morality,Utah,5.2
-Infant_Morality,Vermont,4.4
-Infant_Morality,Virginia,6.2
-Infant_Morality,Washington,4.5
-Infant_Morality,West Virginia,7.6
-Infant_Morality,Wisconsin,6.3
-Infant_Morality,Wyoming,4.8
+Infant Morality,United States,6
+Infant Morality,Alabama,8.6
+Infant Morality,Alaska,5.8
+Infant Morality,Arizona,5.3
+Infant Morality,Arkansas,7.9
+Infant Morality,California,4.8
+Infant Morality,Colorado,5.1
+Infant Morality,Connecticut,4.8
+Infant Morality,Delaware,6.4
+Infant Morality,Florida,6.1
+Infant Morality,Georgia,7
+Infant Morality,Hawaii,6.4
+Infant Morality,Idaho,5.6
+Infant Morality,Illinois,6
+Infant Morality,Indiana,7.2
+Infant Morality,Iowa,4.3
+Infant Morality,Kansas,6.5
+Infant Morality,Kentucky,6.4
+Infant Morality,Louisiana,8.7
+Infant Morality,Maine,7.1
+Infant Morality,Maryland,6.6
+Infant Morality,Massachusetts,4.2
+Infant Morality,Michigan,7.1
+Infant Morality,Minnesota,5.1
+Infant Morality,Mississippi,9.6
+Infant Morality,Missouri,6.5
+Infant Morality,Montana,5.6
+Infant Morality,Nebraska,5.2
+Infant Morality,Nevada,5.3
+Infant Morality,New Hampshire,5.6
+Infant Morality,New Jersey,4.5
+Infant Morality,New Mexico,5.3
+Infant Morality,New York,4.9
+Infant Morality,North Carolina,7
+Infant Morality,North Dakota,6
+Infant Morality,Ohio,7.3
+Infant Morality,Oklahoma,6.7
+Infant Morality,Oregon,4.9
+Infant Morality,Pennsylvania,6.7
+Infant Morality,Rhode Island,6.5
+Infant Morality,South Carolina,6.9
+Infant Morality,South Dakota,6.5
+Infant Morality,Tennessee,6.8
+Infant Morality,Texas,5.8
+Infant Morality,Utah,5.2
+Infant Morality,Vermont,4.4
+Infant Morality,Virginia,6.2
+Infant Morality,Washington,4.5
+Infant Morality,West Virginia,7.6
+Infant Morality,Wisconsin,6.3
+Infant Morality,Wyoming,4.8
 Abortion Rate,United States,
 Abortion Rate,Alabama,9.9
 Abortion Rate,Alaska,11.2
@@ -60,7 +59,6 @@ Abortion Rate,California,
 Abortion Rate,Colorado,10.1
 Abortion Rate,Connecticut,18.4
 Abortion Rate,Delaware,21.2
-Abortion Rate,District of Columbia,16.71
 Abortion Rate,Florida,21.6
 Abortion Rate,Georgia,15.8
 Abortion Rate,Hawaii,10.1
@@ -103,266 +101,261 @@ Abortion Rate,Washington,14.8
 Abortion Rate,West Virginia,5.4
 Abortion Rate,Wisconsin,6.6
 Abortion Rate,Wyoming,
-preterm,United States,0.114
-preterm,Alabama,0.151
-preterm,Alaska,0.1
-preterm,Arizona,0.116
-preterm,Arkansas,0.127
-preterm,California,0.088
-preterm,Colorado,0.103
-preterm,Connecticut,0.098
-preterm,Delaware,0.124
-preterm,District of Columbia,0.133
-preterm,Florida,0.136
-preterm,Georgia,0.127
-preterm,Hawaii,0.126
-preterm,Idaho,0.105
-preterm,Illinois,0.118
-preterm,Indiana,0.11
-preterm,Iowa,0.111
-preterm,Kansas,0.108
-preterm,Kentucky,0.126
-preterm,Louisiana,0.151
-preterm,Maine,0.093
-preterm,Maryland,0.119
-preterm,Massachusetts,0.1
-preterm,Michigan,0.117
-preterm,Minnesota,0.098
-preterm,Mississippi,0.166
-preterm,Missouri,0.113
-preterm,Montana,0.105
-preterm,Nebraska,0.106
-preterm,Nevada,0.126
-preterm,New Hampshire,0.09
-preterm,New Jersey,0.115
-preterm,New Mexico,0.116
-preterm,New York,0.107
-preterm,North Carolina,0.12
-preterm,North Dakota,0.099
-preterm,Ohio,0.121
-preterm,Oklahoma,0.128
-preterm,Oregon,0.093
-preterm,Pennsylvania,0.107
-preterm,Rhode Island,0.102
-preterm,South Carolina,0.138
-preterm,South Dakota,0.108
-preterm,Tennessee,0.126
-preterm,Texas,0.123
-preterm,Utah,0.102
-preterm,Vermont,0.081
-preterm,Virginia,0.11
-preterm,Washington,0.097
-preterm,West Virginia,0.125
-preterm,Wisconsin,0.104
-preterm,Wyoming,0.116
-Heath Care Expenditures,United States,6815
-Heath Care Expenditures,Alabama,6272
-Heath Care Expenditures,Alaska,9128
-Heath Care Expenditures,Arizona,5434
-Heath Care Expenditures,Arkansas,6167
-Heath Care Expenditures,California,6238
-Heath Care Expenditures,Colorado,5994
-Heath Care Expenditures,Connecticut,8654
-Heath Care Expenditures,Delaware,8480
-Heath Care Expenditures,District of Columbia,10349
-Heath Care Expenditures,Florida,7156
-Heath Care Expenditures,Georgia,5467
-Heath Care Expenditures,Hawaii,6856
-Heath Care Expenditures,Idaho,5658
-Heath Care Expenditures,Illinois,6756
-Heath Care Expenditures,Indiana,6666
-Heath Care Expenditures,Iowa,6921
-Heath Care Expenditures,Kansas,6782
-Heath Care Expenditures,Kentucky,6596
-Heath Care Expenditures,Louisiana,6795
-Heath Care Expenditures,Maine,8521
-Heath Care Expenditures,Maryland,7492
-Heath Care Expenditures,Massachusetts,9278
-Heath Care Expenditures,Michigan,6618
-Heath Care Expenditures,Minnesota,7409
-Heath Care Expenditures,Mississippi,6571
-Heath Care Expenditures,Missouri,6967
-Heath Care Expenditures,Montana,6640
-Heath Care Expenditures,Nebraska,7048
-Heath Care Expenditures,Nevada,5735
-Heath Care Expenditures,New Hampshire,7839
-Heath Care Expenditures,New Jersey,7583
-Heath Care Expenditures,New Mexico,6651
-Heath Care Expenditures,New York,8341
-Heath Care Expenditures,North Carolina,6444
-Heath Care Expenditures,North Dakota,7749
-Heath Care Expenditures,Ohio,7076
-Heath Care Expenditures,Oklahoma,6532
-Heath Care Expenditures,Oregon,6580
-Heath Care Expenditures,Pennsylvania,7730
-Heath Care Expenditures,Rhode Island,8309
-Heath Care Expenditures,South Carolina,6323
-Heath Care Expenditures,South Dakota,7056
-Heath Care Expenditures,Tennessee,6411
-Heath Care Expenditures,Texas,5924
-Heath Care Expenditures,Utah,5031
-Heath Care Expenditures,Vermont,7635
-Heath Care Expenditures,Virginia,6286
-Heath Care Expenditures,Washington,6782
-Heath Care Expenditures,West Virginia,7667
-Heath Care Expenditures,Wisconsin,7233
-Heath Care Expenditures,Wyoming,7040
-Medicaid,United States,0.39
-Medicaid,Alabama,0.43
-Medicaid,Alaska,0.34
-Medicaid,Arizona,0.43
-Medicaid,Arkansas,0.48
-Medicaid,California,0.43
-Medicaid,Colorado,0.35
-Medicaid,Connecticut,0.29
-Medicaid,Delaware,0.31
-Medicaid,District of Columbia,0.48
-Medicaid,Florida,0.46
-Medicaid,Georgia,0.41
-Medicaid,Hawaii,0.34
-Medicaid,Idaho,0.35
-Medicaid,Illinois,0.38
-Medicaid,Indiana,0.35
-Medicaid,Iowa,0.35
-Medicaid,Kansas,0.35
-Medicaid,Kentucky,0.42
-Medicaid,Louisiana,0.54
-Medicaid,Maine,0.39
-Medicaid,Maryland,0.26
-Medicaid,Massachusetts,0.36
-Medicaid,Michigan,0.39
-Medicaid,Minnesota,0.25
-Medicaid,Mississippi,0.56
-Medicaid,Missouri,0.32
-Medicaid,Montana,0.33
-Medicaid,Nebraska,0.34
-Medicaid,Nevada,0.34
-Medicaid,New Hampshire,0.31
-Medicaid,New Jersey,0.32
-Medicaid,New Mexico,0.51
-Medicaid,New York,0.43
-Medicaid,North Carolina,0.4
-Medicaid,North Dakota,0.21
-Medicaid,Ohio,0.43
-Medicaid,Oklahoma,0.38
-Medicaid,Oregon,0.38
-Medicaid,Pennsylvania,0.39
-Medicaid,Rhode Island,0.37
-Medicaid,South Carolina,0.42
-Medicaid,South Dakota,0.29
-Medicaid,Tennessee,0.37
-Medicaid,Texas,0.42
-Medicaid,Utah,0.19
-Medicaid,Vermont,0.41
-Medicaid,Virginia,0.21
-Medicaid,Washington,0.42
-Medicaid,West Virginia,0.53
-Medicaid,Wisconsin,0.34
-Medicaid,Wyoming,0.22
-Uninsured,United States,0.06
-Uninsured,Alabama,0.05
-Uninsured,Alaska,0.12
-Uninsured,Arizona,0.1
-Uninsured,Arkansas,0.04
-Uninsured,California,0.05
-Uninsured,Colorado,0.09
-Uninsured,Connecticut,0.03
-Uninsured,Delaware,0.06
-Uninsured,District of Columbia,0.04
-Uninsured,Florida,0.08
-Uninsured,Georgia,0.08
-Uninsured,Hawaii,0.03
-Uninsured,Idaho,0.07
-Uninsured,Illinois,0.04
-Uninsured,Indiana,0.07
-Uninsured,Iowa,
-Uninsured,Kansas,0.07
-Uninsured,Kentucky,0.05
-Uninsured,Louisiana,0.03
-Uninsured,Maine,
-Uninsured,Maryland,0.02
-Uninsured,Massachusetts,0.04
-Uninsured,Michigan,0.03
-Uninsured,Minnesota,0.07
-Uninsured,Mississippi,0.05
-Uninsured,Missouri,0.05
-Uninsured,Montana,0.08
-Uninsured,Nebraska,0.04
-Uninsured,Nevada,0.11
-Uninsured,New Hampshire,0.04
-Uninsured,New Jersey,0.06
-Uninsured,New Mexico,0.08
-Uninsured,New York,0.05
-Uninsured,North Carolina,0.08
-Uninsured,North Dakota,
-Uninsured,Ohio,0.04
-Uninsured,Oklahoma,0.14
-Uninsured,Oregon,0.04
-Uninsured,Pennsylvania,0.05
-Uninsured,Rhode Island,0.03
-Uninsured,South Carolina,0.07
-Uninsured,South Dakota,0.07
-Uninsured,Tennessee,0.06
-Uninsured,Texas,0.09
-Uninsured,Utah,0.1
-Uninsured,Vermont,
-Uninsured,Virginia,0.06
-Uninsured,Washington,0.05
-Uninsured,West Virginia,
-Uninsured,Wisconsin,0.04
-Uninsured,Wyoming,0.06
-poverty,United States,0.21
-poverty,Alabama,0.25
-poverty,Alaska,0.16
-poverty,Arizona,0.29
-poverty,Arkansas,0.3
-poverty,California,0.23
-poverty,Colorado,0.17
-poverty,Connecticut,0.12
-poverty,Delaware,0.17
-poverty,District of Columbia,0.28
-poverty,Florida,0.25
-poverty,Georgia,0.26
-poverty,Hawaii,0.17
-poverty,Idaho,0.16
-poverty,Illinois,0.21
-poverty,Indiana,0.23
-poverty,Iowa,0.14
-poverty,Kansas,0.17
-poverty,Kentucky,0.31
-poverty,Louisiana,0.33
-poverty,Maine,0.2
-poverty,Maryland,0.14
-poverty,Massachusetts,0.18
-poverty,Michigan,0.21
-poverty,Minnesota,0.12
-poverty,Mississippi,0.29
-poverty,Missouri,0.15
-poverty,Montana,0.17
-poverty,Nebraska,0.19
-poverty,Nevada,0.25
-poverty,New Hampshire,0.11
-poverty,New Jersey,0.16
-poverty,New Mexico,0.27
-poverty,New York,0.19
-poverty,North Carolina,0.24
-poverty,North Dakota,0.13
-poverty,Ohio,0.23
-poverty,Oklahoma,0.26
-poverty,Oregon,0.2
-poverty,Pennsylvania,0.19
-poverty,Rhode Island,0.19
-poverty,South Carolina,0.23
-poverty,South Dakota,0.18
-poverty,Tennessee,0.26
-poverty,Texas,0.24
-poverty,Utah,0.12
-poverty,Vermont,0.12
-poverty,Virginia,0.12
-poverty,Washington,0.17
-poverty,West Virginia,0.26
-poverty,Wisconsin,0.16
-poverty,Wyoming,0.11
+Preterm Birth Rate,United States,0.114
+Preterm Birth Rate,Alabama,0.151
+Preterm Birth Rate,Alaska,0.1
+Preterm Birth Rate,Arizona,0.116
+Preterm Birth Rate,Arkansas,0.127
+Preterm Birth Rate,California,0.088
+Preterm Birth Rate,Colorado,0.103
+Preterm Birth Rate,Connecticut,0.098
+Preterm Birth Rate,Delaware,0.124
+Preterm Birth Rate,Florida,0.136
+Preterm Birth Rate,Georgia,0.127
+Preterm Birth Rate,Hawaii,0.126
+Preterm Birth Rate,Idaho,0.105
+Preterm Birth Rate,Illinois,0.118
+Preterm Birth Rate,Indiana,0.11
+Preterm Birth Rate,Iowa,0.111
+Preterm Birth Rate,Kansas,0.108
+Preterm Birth Rate,Kentucky,0.126
+Preterm Birth Rate,Louisiana,0.151
+Preterm Birth Rate,Maine,0.093
+Preterm Birth Rate,Maryland,0.119
+Preterm Birth Rate,Massachusetts,0.1
+Preterm Birth Rate,Michigan,0.117
+Preterm Birth Rate,Minnesota,0.098
+Preterm Birth Rate,Mississippi,0.166
+Preterm Birth Rate,Missouri,0.113
+Preterm Birth Rate,Montana,0.105
+Preterm Birth Rate,Nebraska,0.106
+Preterm Birth Rate,Nevada,0.126
+Preterm Birth Rate,New Hampshire,0.09
+Preterm Birth Rate,New Jersey,0.115
+Preterm Birth Rate,New Mexico,0.116
+Preterm Birth Rate,New York,0.107
+Preterm Birth Rate,North Carolina,0.12
+Preterm Birth Rate,North Dakota,0.099
+Preterm Birth Rate,Ohio,0.121
+Preterm Birth Rate,Oklahoma,0.128
+Preterm Birth Rate,Oregon,0.093
+Preterm Birth Rate,Pennsylvania,0.107
+Preterm Birth Rate,Rhode Island,0.102
+Preterm Birth Rate,South Carolina,0.138
+Preterm Birth Rate,South Dakota,0.108
+Preterm Birth Rate,Tennessee,0.126
+Preterm Birth Rate,Texas,0.123
+Preterm Birth Rate,Utah,0.102
+Preterm Birth Rate,Vermont,0.081
+Preterm Birth Rate,Virginia,0.11
+Preterm Birth Rate,Washington,0.097
+Preterm Birth Rate,West Virginia,0.125
+Preterm Birth Rate,Wisconsin,0.104
+Preterm Birth Rate,Wyoming,0.116
+Heathcare Expenditures,United States,6815
+Heathcare Expenditures,Alabama,6272
+Heathcare Expenditures,Alaska,9128
+Heathcare Expenditures,Arizona,5434
+Heathcare Expenditures,Arkansas,6167
+Heathcare Expenditures,California,6238
+Heathcare Expenditures,Colorado,5994
+Heathcare Expenditures,Connecticut,8654
+Heathcare Expenditures,Delaware,8480
+Heathcare Expenditures,Florida,7156
+Heathcare Expenditures,Georgia,5467
+Heathcare Expenditures,Hawaii,6856
+Heathcare Expenditures,Idaho,5658
+Heathcare Expenditures,Illinois,6756
+Heathcare Expenditures,Indiana,6666
+Heathcare Expenditures,Iowa,6921
+Heathcare Expenditures,Kansas,6782
+Heathcare Expenditures,Kentucky,6596
+Heathcare Expenditures,Louisiana,6795
+Heathcare Expenditures,Maine,8521
+Heathcare Expenditures,Maryland,7492
+Heathcare Expenditures,Massachusetts,9278
+Heathcare Expenditures,Michigan,6618
+Heathcare Expenditures,Minnesota,7409
+Heathcare Expenditures,Mississippi,6571
+Heathcare Expenditures,Missouri,6967
+Heathcare Expenditures,Montana,6640
+Heathcare Expenditures,Nebraska,7048
+Heathcare Expenditures,Nevada,5735
+Heathcare Expenditures,New Hampshire,7839
+Heathcare Expenditures,New Jersey,7583
+Heathcare Expenditures,New Mexico,6651
+Heathcare Expenditures,New York,8341
+Heathcare Expenditures,North Carolina,6444
+Heathcare Expenditures,North Dakota,7749
+Heathcare Expenditures,Ohio,7076
+Heathcare Expenditures,Oklahoma,6532
+Heathcare Expenditures,Oregon,6580
+Heathcare Expenditures,Pennsylvania,7730
+Heathcare Expenditures,Rhode Island,8309
+Heathcare Expenditures,South Carolina,6323
+Heathcare Expenditures,South Dakota,7056
+Heathcare Expenditures,Tennessee,6411
+Heathcare Expenditures,Texas,5924
+Heathcare Expenditures,Utah,5031
+Heathcare Expenditures,Vermont,7635
+Heathcare Expenditures,Virginia,6286
+Heathcare Expenditures,Washington,6782
+Heathcare Expenditures,West Virginia,7667
+Heathcare Expenditures,Wisconsin,7233
+Heathcare Expenditures,Wyoming,7040
+Children on Medicaid,United States,0.39
+Children on Medicaid,Alabama,0.43
+Children on Medicaid,Alaska,0.34
+Children on Medicaid,Arizona,0.43
+Children on Medicaid,Arkansas,0.48
+Children on Medicaid,California,0.43
+Children on Medicaid,Colorado,0.35
+Children on Medicaid,Connecticut,0.29
+Children on Medicaid,Delaware,0.31
+Children on Medicaid,Florida,0.46
+Children on Medicaid,Georgia,0.41
+Children on Medicaid,Hawaii,0.34
+Children on Medicaid,Idaho,0.35
+Children on Medicaid,Illinois,0.38
+Children on Medicaid,Indiana,0.35
+Children on Medicaid,Iowa,0.35
+Children on Medicaid,Kansas,0.35
+Children on Medicaid,Kentucky,0.42
+Children on Medicaid,Louisiana,0.54
+Children on Medicaid,Maine,0.39
+Children on Medicaid,Maryland,0.26
+Children on Medicaid,Massachusetts,0.36
+Children on Medicaid,Michigan,0.39
+Children on Medicaid,Minnesota,0.25
+Children on Medicaid,Mississippi,0.56
+Children on Medicaid,Missouri,0.32
+Children on Medicaid,Montana,0.33
+Children on Medicaid,Nebraska,0.34
+Children on Medicaid,Nevada,0.34
+Children on Medicaid,New Hampshire,0.31
+Children on Medicaid,New Jersey,0.32
+Children on Medicaid,New Mexico,0.51
+Children on Medicaid,New York,0.43
+Children on Medicaid,North Carolina,0.4
+Children on Medicaid,North Dakota,0.21
+Children on Medicaid,Ohio,0.43
+Children on Medicaid,Oklahoma,0.38
+Children on Medicaid,Oregon,0.38
+Children on Medicaid,Pennsylvania,0.39
+Children on Medicaid,Rhode Island,0.37
+Children on Medicaid,South Carolina,0.42
+Children on Medicaid,South Dakota,0.29
+Children on Medicaid,Tennessee,0.37
+Children on Medicaid,Texas,0.42
+Children on Medicaid,Utah,0.19
+Children on Medicaid,Vermont,0.41
+Children on Medicaid,Virginia,0.21
+Children on Medicaid,Washington,0.42
+Children on Medicaid,West Virginia,0.53
+Children on Medicaid,Wisconsin,0.34
+Children on Medicaid,Wyoming,0.22
+Uninsured Children,United States,0.06
+Uninsured Children,Alabama,0.05
+Uninsured Children,Alaska,0.12
+Uninsured Children,Arizona,0.1
+Uninsured Children,Arkansas,0.04
+Uninsured Children,California,0.05
+Uninsured Children,Colorado,0.09
+Uninsured Children,Connecticut,0.03
+Uninsured Children,Delaware,0.06
+Uninsured Children,Florida,0.08
+Uninsured Children,Georgia,0.08
+Uninsured Children,Hawaii,0.03
+Uninsured Children,Idaho,0.07
+Uninsured Children,Illinois,0.04
+Uninsured Children,Indiana,0.07
+Uninsured Children,Iowa,
+Uninsured Children,Kansas,0.07
+Uninsured Children,Kentucky,0.05
+Uninsured Children,Louisiana,0.03
+Uninsured Children,Maine,
+Uninsured Children,Maryland,0.02
+Uninsured Children,Massachusetts,0.04
+Uninsured Children,Michigan,0.03
+Uninsured Children,Minnesota,0.07
+Uninsured Children,Mississippi,0.05
+Uninsured Children,Missouri,0.05
+Uninsured Children,Montana,0.08
+Uninsured Children,Nebraska,0.04
+Uninsured Children,Nevada,0.11
+Uninsured Children,New Hampshire,0.04
+Uninsured Children,New Jersey,0.06
+Uninsured Children,New Mexico,0.08
+Uninsured Children,New York,0.05
+Uninsured Children,North Carolina,0.08
+Uninsured Children,North Dakota,
+Uninsured Children,Ohio,0.04
+Uninsured Children,Oklahoma,0.14
+Uninsured Children,Oregon,0.04
+Uninsured Children,Pennsylvania,0.05
+Uninsured Children,Rhode Island,0.03
+Uninsured Children,South Carolina,0.07
+Uninsured Children,South Dakota,0.07
+Uninsured Children,Tennessee,0.06
+Uninsured Children,Texas,0.09
+Uninsured Children,Utah,0.1
+Uninsured Children,Vermont,
+Uninsured Children,Virginia,0.06
+Uninsured Children,Washington,0.05
+Uninsured Children,West Virginia,
+Uninsured Children,Wisconsin,0.04
+Uninsured Children,Wyoming,0.06
+Poverty Rate,United States,0.21
+Poverty Rate,Alabama,0.25
+Poverty Rate,Alaska,0.16
+Poverty Rate,Arizona,0.29
+Poverty Rate,Arkansas,0.3
+Poverty Rate,California,0.23
+Poverty Rate,Colorado,0.17
+Poverty Rate,Connecticut,0.12
+Poverty Rate,Delaware,0.17
+Poverty Rate,Florida,0.25
+Poverty Rate,Georgia,0.26
+Poverty Rate,Hawaii,0.17
+Poverty Rate,Idaho,0.16
+Poverty Rate,Illinois,0.21
+Poverty Rate,Indiana,0.23
+Poverty Rate,Iowa,0.14
+Poverty Rate,Kansas,0.17
+Poverty Rate,Kentucky,0.31
+Poverty Rate,Louisiana,0.33
+Poverty Rate,Maine,0.2
+Poverty Rate,Maryland,0.14
+Poverty Rate,Massachusetts,0.18
+Poverty Rate,Michigan,0.21
+Poverty Rate,Minnesota,0.12
+Poverty Rate,Mississippi,0.29
+Poverty Rate,Missouri,0.15
+Poverty Rate,Montana,0.17
+Poverty Rate,Nebraska,0.19
+Poverty Rate,Nevada,0.25
+Poverty Rate,New Hampshire,0.11
+Poverty Rate,New Jersey,0.16
+Poverty Rate,New Mexico,0.27
+Poverty Rate,New York,0.19
+Poverty Rate,North Carolina,0.24
+Poverty Rate,North Dakota,0.13
+Poverty Rate,Ohio,0.23
+Poverty Rate,Oklahoma,0.26
+Poverty Rate,Oregon,0.2
+Poverty Rate,Pennsylvania,0.19
+Poverty Rate,Rhode Island,0.19
+Poverty Rate,South Carolina,0.23
+Poverty Rate,South Dakota,0.18
+Poverty Rate,Tennessee,0.26
+Poverty Rate,Texas,0.24
+Poverty Rate,Utah,0.12
+Poverty Rate,Vermont,0.12
+Poverty Rate,Virginia,0.12
+Poverty Rate,Washington,0.17
+Poverty Rate,West Virginia,0.26
+Poverty Rate,Wisconsin,0.16
+Poverty Rate,Wyoming,0.11
 Low Birth Weight,United States,0.08
 Low Birth Weight,Alabama,0.1
 Low Birth Weight,Alaska,0.06
@@ -372,7 +365,6 @@ Low Birth Weight,California,0.07
 Low Birth Weight,Colorado,0.09
 Low Birth Weight,Connecticut,0.08
 Low Birth Weight,Delaware,0.08
-Low Birth Weight,District of Columbia,0.09
 Low Birth Weight,Florida,0.09
 Low Birth Weight,Georgia,0.1
 Low Birth Weight,Hawaii,0.08
@@ -415,58 +407,6 @@ Low Birth Weight,Washington,0.06
 Low Birth Weight,West Virginia,0.09
 Low Birth Weight,Wisconsin,0.07
 Low Birth Weight,Wyoming,0.09
-GINI Coeffecient,United States,0.481
-GINI Coeffecient,Alabama,0.475
-GINI Coeffecient,Alaska,0.408
-GINI Coeffecient,Arizona,0.468
-GINI Coeffecient,Arkansas,0.469
-GINI Coeffecient,California,0.49
-GINI Coeffecient,Colorado,0.461
-GINI Coeffecient,Connecticut,0.499
-GINI Coeffecient,Delaware,0.451
-GINI Coeffecient,District of Columbia,0.532
-GINI Coeffecient,Florida,0.484
-GINI Coeffecient,Georgia,0.484
-GINI Coeffecient,Hawaii,0.44
-GINI Coeffecient,Idaho,0.438
-GINI Coeffecient,Illinois,0.482
-GINI Coeffecient,Indiana,0.455
-GINI Coeffecient,Iowa,0.443
-GINI Coeffecient,Kansas,0.459
-GINI Coeffecient,Kentucky,0.472
-GINI Coeffecient,Louisiana,0.491
-GINI Coeffecient,Maine,0.453
-GINI Coeffecient,Maryland,0.456
-GINI Coeffecient,Massachusetts,0.484
-GINI Coeffecient,Michigan,0.464
-GINI Coeffecient,Minnesota,0.446
-GINI Coeffecient,Mississippi,0.479
-GINI Coeffecient,Missouri,0.461
-GINI Coeffecient,Montana,0.462
-GINI Coeffecient,Nebraska,0.445
-GINI Coeffecient,Nevada,0.454
-GINI Coeffecient,New Hampshire,0.439
-GINI Coeffecient,New Jersey,0.48
-GINI Coeffecient,New Mexico,0.476
-GINI Coeffecient,New York,0.51
-GINI Coeffecient,North Carolina,0.477
-GINI Coeffecient,North Dakota,0.455
-GINI Coeffecient,Ohio,0.465
-GINI Coeffecient,Oklahoma,0.462
-GINI Coeffecient,Oregon,0.46
-GINI Coeffecient,Pennsylvania,0.47
-GINI Coeffecient,Rhode Island,0.477
-GINI Coeffecient,South Carolina,0.467
-GINI Coeffecient,South Dakota,0.443
-GINI Coeffecient,Tennessee,0.478
-GINI Coeffecient,Texas,0.481
-GINI Coeffecient,Utah,0.426
-GINI Coeffecient,Vermont,0.454
-GINI Coeffecient,Virginia,0.467
-GINI Coeffecient,Washington,0.457
-GINI Coeffecient,West Virginia,0.465
-GINI Coeffecient,Wisconsin,0.445
-GINI Coeffecient,Wyoming,0.418
 Birth Rate,United States,62.5
 Birth Rate,Alabama,60.6
 Birth Rate,Alaska,77.8
@@ -476,7 +416,6 @@ Birth Rate,California,62
 Birth Rate,Colorado,61
 Birth Rate,Connecticut,52.7
 Birth Rate,Delaware,60.3
-Birth Rate,District of Columbia,53.3
 Birth Rate,Florida,59.3
 Birth Rate,Georgia,61.6
 Birth Rate,Hawaii,71.5
@@ -528,7 +467,6 @@ Obesity,California,24.7
 Obesity,Colorado,21.3
 Obesity,Connecticut,26.3
 Obesity,Delaware,30.7
-Obesity,District of Columbia,21.7
 Obesity,Florida,26.2
 Obesity,Georgia,30.5
 Obesity,Hawaii,22.1
@@ -571,107 +509,105 @@ Obesity,Washington,27.3
 Obesity,West Virginia,35.7
 Obesity,Wisconsin,31.2
 Obesity,Wyoming,29.5
-"Teen Birth Rate per 1,000",United States,26.51
-"Teen Birth Rate per 1,000",Alabama,34.3
-"Teen Birth Rate per 1,000",Alaska,30.3
-"Teen Birth Rate per 1,000",Arizona,33.1
-"Teen Birth Rate per 1,000",Arkansas,43.5
-"Teen Birth Rate per 1,000",California,23.6
-"Teen Birth Rate per 1,000",Colorado,23.4
-"Teen Birth Rate per 1,000",Connecticut,12.9
-"Teen Birth Rate per 1,000",Delaware,24.7
-"Teen Birth Rate per 1,000",District of Columbia,32.1
-"Teen Birth Rate per 1,000",Florida,24.6
-"Teen Birth Rate per 1,000",Georgia,30.5
-"Teen Birth Rate per 1,000",Hawaii,25.1
-"Teen Birth Rate per 1,000",Idaho,25.7
-"Teen Birth Rate per 1,000",Illinois,24.6
-"Teen Birth Rate per 1,000",Indiana,30.3
-"Teen Birth Rate per 1,000",Iowa,22.1
-"Teen Birth Rate per 1,000",Kansas,29.6
-"Teen Birth Rate per 1,000",Kentucky,39.5
-"Teen Birth Rate per 1,000",Louisiana,39.2
-"Teen Birth Rate per 1,000",Maine,17.4
-"Teen Birth Rate per 1,000",Maryland,19.4
-"Teen Birth Rate per 1,000",Massachusetts,12.1
-"Teen Birth Rate per 1,000",Michigan,23.6
-"Teen Birth Rate per 1,000",Minnesota,16.8
-"Teen Birth Rate per 1,000",Mississippi,42.6
-"Teen Birth Rate per 1,000",Missouri,30
-"Teen Birth Rate per 1,000",Montana,27.9
-"Teen Birth Rate per 1,000",Nebraska,24.9
-"Teen Birth Rate per 1,000",Nevada,30.3
-"Teen Birth Rate per 1,000",New Hampshire,12.6
-"Teen Birth Rate per 1,000",New Jersey,14.8
-"Teen Birth Rate per 1,000",New Mexico,43.3
-"Teen Birth Rate per 1,000",New York,17.7
-"Teen Birth Rate per 1,000",North Carolina,28.4
-"Teen Birth Rate per 1,000",North Dakota,24.1
-"Teen Birth Rate per 1,000",Ohio,27.2
-"Teen Birth Rate per 1,000",Oklahoma,42.9
-"Teen Birth Rate per 1,000",Oregon,21.6
-"Teen Birth Rate per 1,000",Pennsylvania,20.9
-"Teen Birth Rate per 1,000",Rhode Island,17.7
-"Teen Birth Rate per 1,000",South Carolina,31.6
-"Teen Birth Rate per 1,000",South Dakota,29.1
-"Teen Birth Rate per 1,000",Tennessee,34.7
-"Teen Birth Rate per 1,000",Texas,41
-"Teen Birth Rate per 1,000",Utah,20.6
-"Teen Birth Rate per 1,000",Vermont,14.5
-"Teen Birth Rate per 1,000",Virginia,20.1
-"Teen Birth Rate per 1,000",Washington,20.5
-"Teen Birth Rate per 1,000",West Virginia,40.1
-"Teen Birth Rate per 1,000",Wisconsin,19.6
-"Teen Birth Rate per 1,000",Wyoming,29.6
-Unintended Births,United States,55
-Unintended Births,Alabama,48
-Unintended Births,Alaska,51
-Unintended Births,Arizona,55
-Unintended Births,Arkansas,48
-Unintended Births,California,45
-Unintended Births,Colorado,51
-Unintended Births,Connecticut,57
-Unintended Births,Delaware,62
-Unintended Births,District of Columbia,59
-Unintended Births,Florida,60
-Unintended Births,Georgia,56
-Unintended Births,Hawaii,39
-Unintended Births,Idaho,52
-Unintended Births,Illinois,49
-Unintended Births,Indiana,43
-Unintended Births,Iowa,45
-Unintended Births,Kansas,47
-Unintended Births,Kentucky,60
-Unintended Births,Louisiana,48
-Unintended Births,Maine,58
-Unintended Births,Maryland,47
-Unintended Births,Massachusetts,54
-Unintended Births,Michigan,40
-Unintended Births,Minnesota,62
-Unintended Births,Mississippi,51
-Unintended Births,Missouri,45
-Unintended Births,Montana,43
-Unintended Births,Nebraska,52
-Unintended Births,Nevada,43
-Unintended Births,New Hampshire,53
-Unintended Births,New Jersey,55
-Unintended Births,New Mexico,55
-Unintended Births,New York,54
-Unintended Births,North Carolina,44
-Unintended Births,North Dakota,55
-Unintended Births,Ohio,51
-Unintended Births,Oklahoma,46
-Unintended Births,Oregon,53
-Unintended Births,Pennsylvania,52
-Unintended Births,Rhode Island,50
-Unintended Births,South Carolina,46
-Unintended Births,South Dakota,56
-Unintended Births,Tennessee,54
-Unintended Births,Texas,36
-Unintended Births,Utah,46
-Unintended Births,Vermont,54
-Unintended Births,Virginia,48
-Unintended Births,Washington,52
-Unintended Births,West Virginia,46
-Unintended Births,Wisconsin,44
-Unintended Births,Wyoming,
+Teen Birth Rate,United States,26.51
+Teen Birth Rate,Alabama,34.3
+Teen Birth Rate,Alaska,30.3
+Teen Birth Rate,Arizona,33.1
+Teen Birth Rate,Arkansas,43.5
+Teen Birth Rate,California,23.6
+Teen Birth Rate,Colorado,23.4
+Teen Birth Rate,Connecticut,12.9
+Teen Birth Rate,Delaware,24.7
+Teen Birth Rate,Florida,24.6
+Teen Birth Rate,Georgia,30.5
+Teen Birth Rate,Hawaii,25.1
+Teen Birth Rate,Idaho,25.7
+Teen Birth Rate,Illinois,24.6
+Teen Birth Rate,Indiana,30.3
+Teen Birth Rate,Iowa,22.1
+Teen Birth Rate,Kansas,29.6
+Teen Birth Rate,Kentucky,39.5
+Teen Birth Rate,Louisiana,39.2
+Teen Birth Rate,Maine,17.4
+Teen Birth Rate,Maryland,19.4
+Teen Birth Rate,Massachusetts,12.1
+Teen Birth Rate,Michigan,23.6
+Teen Birth Rate,Minnesota,16.8
+Teen Birth Rate,Mississippi,42.6
+Teen Birth Rate,Missouri,30
+Teen Birth Rate,Montana,27.9
+Teen Birth Rate,Nebraska,24.9
+Teen Birth Rate,Nevada,30.3
+Teen Birth Rate,New Hampshire,12.6
+Teen Birth Rate,New Jersey,14.8
+Teen Birth Rate,New Mexico,43.3
+Teen Birth Rate,New York,17.7
+Teen Birth Rate,North Carolina,28.4
+Teen Birth Rate,North Dakota,24.1
+Teen Birth Rate,Ohio,27.2
+Teen Birth Rate,Oklahoma,42.9
+Teen Birth Rate,Oregon,21.6
+Teen Birth Rate,Pennsylvania,20.9
+Teen Birth Rate,Rhode Island,17.7
+Teen Birth Rate,South Carolina,31.6
+Teen Birth Rate,South Dakota,29.1
+Teen Birth Rate,Tennessee,34.7
+Teen Birth Rate,Texas,41
+Teen Birth Rate,Utah,20.6
+Teen Birth Rate,Vermont,14.5
+Teen Birth Rate,Virginia,20.1
+Teen Birth Rate,Washington,20.5
+Teen Birth Rate,West Virginia,40.1
+Teen Birth Rate,Wisconsin,19.6
+Teen Birth Rate,Wyoming,29.6
+Unintended Pregnancies,United States,55
+Unintended Pregnancies,Alabama,48
+Unintended Pregnancies,Alaska,51
+Unintended Pregnancies,Arizona,55
+Unintended Pregnancies,Arkansas,48
+Unintended Pregnancies,California,45
+Unintended Pregnancies,Colorado,51
+Unintended Pregnancies,Connecticut,57
+Unintended Pregnancies,Delaware,62
+Unintended Pregnancies,Florida,60
+Unintended Pregnancies,Georgia,56
+Unintended Pregnancies,Hawaii,39
+Unintended Pregnancies,Idaho,52
+Unintended Pregnancies,Illinois,49
+Unintended Pregnancies,Indiana,43
+Unintended Pregnancies,Iowa,45
+Unintended Pregnancies,Kansas,47
+Unintended Pregnancies,Kentucky,60
+Unintended Pregnancies,Louisiana,48
+Unintended Pregnancies,Maine,58
+Unintended Pregnancies,Maryland,47
+Unintended Pregnancies,Massachusetts,54
+Unintended Pregnancies,Michigan,40
+Unintended Pregnancies,Minnesota,62
+Unintended Pregnancies,Mississippi,51
+Unintended Pregnancies,Missouri,45
+Unintended Pregnancies,Montana,43
+Unintended Pregnancies,Nebraska,52
+Unintended Pregnancies,Nevada,43
+Unintended Pregnancies,New Hampshire,53
+Unintended Pregnancies,New Jersey,55
+Unintended Pregnancies,New Mexico,55
+Unintended Pregnancies,New York,54
+Unintended Pregnancies,North Carolina,44
+Unintended Pregnancies,North Dakota,55
+Unintended Pregnancies,Ohio,51
+Unintended Pregnancies,Oklahoma,46
+Unintended Pregnancies,Oregon,53
+Unintended Pregnancies,Pennsylvania,52
+Unintended Pregnancies,Rhode Island,50
+Unintended Pregnancies,South Carolina,46
+Unintended Pregnancies,South Dakota,56
+Unintended Pregnancies,Tennessee,54
+Unintended Pregnancies,Texas,36
+Unintended Pregnancies,Utah,46
+Unintended Pregnancies,Vermont,54
+Unintended Pregnancies,Virginia,48
+Unintended Pregnancies,Washington,52
+Unintended Pregnancies,West Virginia,46
+Unintended Pregnancies,Wisconsin,44
+Unintended Pregnancies,Wyoming

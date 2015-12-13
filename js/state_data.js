@@ -1,7 +1,7 @@
 (function(){
 
-var margin = {top: 10, right: 0, bottom: 20, left: 20},
-    width = 400 - margin.left - margin.right,
+var margin = {top: 10, right: 20, bottom: 20, left: 20},
+    width = 330 - margin.left - margin.right,
     height = 90 - margin.top - margin.bottom;
 
 
@@ -28,7 +28,7 @@ var tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-10, 0])
   .html(function(d) {
-    return "<strong>" + d.factor + "\t" + d.state + "</strong><br/><span style='color:#fff'>" + d.number + "</span>";
+    return d.state + "<br/><span class='tooltipText'>" + d.number + "</span>";
   })
 
 // csv loaded asynchronously
@@ -47,7 +47,6 @@ d3.csv("data/state_data.csv", type, function(data) {
   // });
 
   // Compute the minimum and maximum state and number across symbols.
-  x.domain(data.map(function(d) { return d.state; }));
 
 
   // Add an SVG element for each factor, with the desired dimensions and margin.
@@ -60,22 +59,35 @@ d3.csv("data/state_data.csv", type, function(data) {
   .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
     .each(function(d,i){
+
+      d.values.sort(function(a, b) {
+        //console.log(d.values)
+        //console.log(a.percent,b.percent);
+
+        //console.log(a.number);
+        return d3.ascending(a.number, b.number);
+      });
+
       var svg = d3.select(this);
 
-      console.log(d);
+
+
+      //console.log(d);
+
+
       y.domain([0, d3.max(d.values, function(s) { return s.number;})]);
+      x.domain(d.values.map(function(d) { return d.state; }));
 
       svg.append("g")
-          // Hide y axis
-          // .attr("class", "y axis")
-          // .call(yAxis)
-        .append("text")
-        .attr("x", width + 10)
-        .attr("y", height+ 50)
-        .attr("dy", ".71em")
-        .attr("text-anchor", "start")
-        .attr("font-size", "1.1em")
-        .text(function(d) { return d.key});
+          .attr("class", "y axis")
+            // .call(yAxis)
+          .append("text")
+          .attr("x", 10)
+          .attr("y", height+2)
+          .attr("dy", ".71em")
+          .attr("text-anchor", "start")
+          .attr("font-size", "1.1em")
+          .text(function(d) { return d.key});
 
       // Accessing nested data: https://groups.google.com/forum/#!topic/d3-js/kummm9mS4EA
       // data(function(d) {return d.values;})
@@ -84,9 +96,12 @@ d3.csv("data/state_data.csv", type, function(data) {
           .data(function(d) {return d.values;})
           .enter()
           .append("rect")
-          .attr("class", "bar")
+          .attr("class", function(d){
+            var replacedStrings = d.state.replace(" ","_");
+            return "bar " + replacedStrings;
+          })
           .attr("x", function(d) { return x(d.state); })
-          .attr("width", x.rangeBand())
+          .attr("width", x.rangeBand()-1)
           .attr("y", function(d) {
             var yCoordinate = y(d.number);
             if(isNaN(yCoordinate)){
@@ -104,8 +119,16 @@ d3.csv("data/state_data.csv", type, function(data) {
             }
           })
           .attr("fill", function(d) {return color(d.number)})
-          .on('mouseover', tip.show)
-          .on('mouseout', tip.hide)
+          .on('mouseout', function(d){
+            tip.hide(d);
+            var replacedStrings = d.state.replace(" ","_");
+            d3.selectAll(".wrapperMapMultiples ." + replacedStrings).classed("hoverFocus",false);
+          })
+          .on('mouseover', function(d){
+            tip.show(d);
+            var replacedStrings = d.state.replace(" ","_");
+            d3.selectAll(".wrapperMapMultiples ." + replacedStrings).classed("hoverFocus",true);
+          });
 
       svg.call(tip);
 

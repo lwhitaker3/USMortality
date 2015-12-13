@@ -1,7 +1,8 @@
 (function(){
 
-    var width = 400;
+    var width = 982;
     var height = 500;
+    var selected;
 
 
         //setup the svg
@@ -15,29 +16,63 @@
             .attr("height", "100%")
             .attr("fill", "none");
 
+
+
         d3.csv("data/imr_high_income.csv", function(error, data) {
 
-            var column = d3.select("#menu select").property("value");
-            var dataset = top20_by_column(data, column); // you need to finish this function below.
+          var selected = 1960;
+          //console.log(column);
+          var dataset = drawGraph(data, selected); // you need to finish this function below.
+          //
+          // //console.log(column, dataset);
+          //
+          redraw(dataset, selected);
 
-            console.log(column, dataset);
+          d3.select("button#y1960").classed("selected", true);
 
-            redraw(dataset, column);
+          d3.select("#y1960")
+              .on("click", function(d,i) {
+                  selected = "1960"
+                  dataset = drawGraph(data, selected);
+                  redraw(dataset, selected);
+                  var thisButton = d3.select(this);
+                  d3.selectAll("#buttons_1 button").classed("selected", false);
+                  thisButton.classed("selected", true);
+
+              });
+          d3.select("#y1990")
+              .on("click", function(d,i) {
+                  selected = "1990"
+                  dataset = drawGraph(data, selected);
+                  redraw(dataset, selected);
+                  var thisButton = d3.select(this);
+                  d3.selectAll("#buttons_1 button").classed("selected", false);
+                  thisButton.classed("selected", true);
+              });
+          d3.select("#y2015")
+              .on("click", function(d,i) {
+                  selected = "2015"
+                  dataset = drawGraph(data, selected);
+                  redraw(dataset, selected);
+                  var thisButton = d3.select(this);
+                  d3.selectAll("#buttons_1 button").classed("selected", false);
+                  thisButton.classed("selected", true);
+              });
 
             //setup our ui -- requires access to data variable, so inside csv
-            d3.select("#menu select")
-                .on("change", function() {
-                    column = d3.select("#menu select").property("value");
-                    dataset = top20_by_column(data, column);
-                    console.log(column, dataset);
-                    redraw(dataset, column);
-            });
+            // d3.select("#menu select")
+            //     .on("change", function() {
+            //         column = d3.select("#menu select").property("value");
+            //         dataset = drawGraph(data, column);
+            //         //console.log(column, dataset);
+            //         redraw(dataset, column);
+            // });
 
         }) // end csv
 
         //make the bars for the first data set.  They will be red at first.
 
-    function top20_by_column(data, column) {
+    function drawGraph(data, column) {
 
       return data.sort(function(a, b) {
         return b[column] - a[column]; // descending order, biggest at the top!
@@ -64,14 +99,14 @@
             .data(data, function (d) { return d.country}); // key function!
 
         //update -- existing bars get blue when we "redraw". We don't change labels.
-        bars
-            .attr("fill", "steelblue");
+        // bars
+        //   .attr("fill", "steelblue");
 
         //enter - new bars get set to darkorange when we "redraw."
         bars.enter()
             .append("rect")
-            .attr("class", "bar")
-            .attr("fill", "steelblue");
+            .attr("class", "bar");
+            // .attr("fill", "steelblue");
 
         //exit -- remove ones that aren't in the index set
         bars.exit()
@@ -92,6 +127,13 @@
             .attr("height",  yScale.rangeBand())
             .attr("transform", function(d,i) {
                 return "translate(" + [0, yScale(i)] + ")"
+            })
+            .attr("class", function(d,i){
+              if (d.country === 'United States'){
+                return "bar usFocus";
+              }else{
+                return "bar";
+              }
             });
 
 

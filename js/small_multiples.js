@@ -1,7 +1,7 @@
 (function(){
 
-var margin = {top: 10, right: 0, bottom: 20, left: 20},
-    width = 200 - margin.left - margin.right,
+var margin = {top: 10, right: 5, bottom: 0, left: 5},
+    width = 166 - margin.left - margin.right,
     height = 90 - margin.top - margin.bottom;
 
 
@@ -28,7 +28,7 @@ var tip = d3.tip()
   .attr('class', 'd3-tip')
   .offset([-10, 0])
   .html(function(d) {
-    return "<strong>" + d.factor + "\t" + d.country + "</strong><br/><span style='color:#fff'>" + d.percent + "</span>";
+    return "<p class='tooltipTitle'>" +d.country + ": </p><p class='tooltipText'>" + d.percent + "</p>";
   })
 
 // csv loaded asynchronously
@@ -39,6 +39,10 @@ d3.csv("data/country_data_multiples.csv", type, function(data) {
       .key(function(d) { return d.factor; })
       .entries(data);
 
+  dataByFactors =  dataByFactors.filter(function(d){
+    console.log(d);
+    return d.key != "Infant Mortality Rate";
+  })
   // Parse dates and numbers. We assume values are sorted by date.
   // Also compute the maximum price per symbol, needed for the y-domain.
   // symbols.forEach(function(s) {
@@ -46,8 +50,6 @@ d3.csv("data/country_data_multiples.csv", type, function(data) {
   //   s.maxPrice = d3.max(s.values, function(d) { return d.price; });
   // });
 
-  // Compute the minimum and maximum country and percent across symbols.
-  x.domain(data.map(function(d) { return d.country; }));
 
 
   // Add an SVG element for each factor, with the desired dimensions and margin.
@@ -57,25 +59,41 @@ d3.csv("data/country_data_multiples.csv", type, function(data) {
     .append("svg:svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-  .append("g")
+    .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
     .each(function(d,i){
+
+      d.values.sort(function(a, b) {
+        //console.log(a.percent,b.percent);
+        //console.log(a.percent);
+        return d3.ascending(a.percent, b.percent);
+
+      });
+      //console.log(d.values);
+
+
+
       var svg = d3.select(this);
 
-      console.log(d);
-      y.domain([0, d3.max(d.values, function(s) { return s.percent;})]);
 
-      svg.append("g")
-          // Hide y axis
-          // .attr("class", "y axis")
-          // .call(yAxis)
-        .append("text")
-        .attr("x", width + 10)
-        .attr("y", height+ 50)
-        .attr("dy", ".71em")
-        .attr("text-anchor", "start")
-        .attr("font-size", "1.1em")
-        .text(function(d) { return d.key});
+
+      y.domain([0, d3.max(d.values, function(s) { return s.percent;})]);
+      // Compute the minimum and maximum country and percent across symbols.
+      x.domain(d.values.map(function(d) { return d.country; }));
+
+
+
+      // svg.append("g")
+      //     // Hide y axis
+      //   .attr("class", "y axis")
+      //     // .call(yAxis)
+      //   .append("text")
+      //   .attr("x", 10)
+      //   .attr("y", height+2)
+      //   .attr("dy", ".71em")
+      //   .attr("text-anchor", "start")
+      //   .attr("font-size", "1.1em")
+      //   .text(function(d) { return d.key});
 
       // Accessing nested data: https://groups.google.com/forum/#!topic/d3-js/kummm9mS4EA
       // data(function(d) {return d.values;})
@@ -84,16 +102,30 @@ d3.csv("data/country_data_multiples.csv", type, function(data) {
           .data(function(d) {return d.values;})
           .enter()
           .append("rect")
-          .attr("class", "bar")
+          .attr("class", function(d){
+            var replacedStrings = d.country.replace(" ","_");
+            return "bar " + replacedStrings;
+          })
           .attr("x", function(d) { return x(d.country); })
           .attr("width", x.rangeBand())
           .attr("y", function(d) { return y(d.percent); })
           .attr("height", function(d) { return height - y(d.percent); })
           .attr("fill", function(d) {return color(d.percent)})
-          .on('mouseover', tip.show)
-          .on('mouseout', tip.hide)
+          .on('mouseout', function(d){
+            tip.hide(d);
+            var replacedStrings = d.country.replace(" ","_");
+            d3.selectAll(".wrapperScatterMultiples ." + replacedStrings).classed("hoverFocus",false);
+          })
+          .on('mouseover', function(d){
+            tip.show(d);
+            var replacedStrings = d.country.replace(" ","_");
+            d3.selectAll(".wrapperScatterMultiples ." + replacedStrings).classed("hoverFocus",true);
+          });
+
 
       svg.call(tip);
+
+
 
     });
 
@@ -105,6 +137,7 @@ d3.csv("data/country_data_multiples.csv", type, function(data) {
 
 
 });
+
 
 function type(d) {
   d.percent = +d.percent;

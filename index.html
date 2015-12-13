@@ -6,130 +6,228 @@
     <title>Foundation</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,300italic,400italic,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
   </head>
   <body>
 
     <header>
       <div class="hero_image">
         <div class="row">
-            <h1>US Infant Mortality Problem</h1>
-            <h2>Every year in the United States 6.3 in every 1,000 babies will not make it to their first birthday. This makes the infant mortality rate in the United States the highest of any high income country in the world</h2>
+          <div class ="columns small-8 textBox">
+            <h1>US Infant Mortality</h1>
+            <p>Every year in the United States 6.3 in every 1,000 babies will not make it to their first birthday. This makes the infant mortality rate in the United States the highest of any high income country in the world</p>
+          </div>
         </div>
       </div>
     </header>
 
     <nav>
       <div data-magellan-expedition="fixed">
-        <div class="row">
         <dl class="sub-nav">
-          <dd data-magellan-arrival="section1"><a href="#section1">World</a></dd>
-          <dd data-magellan-arrival="section2"><a href="#section2">High Income Developed Countries</a></dd>
-          <dd data-magellan-arrival="section3"><a href="#section3">Where the US Falls Short</a></dd>
-          <dd data-magellan-arrival="section4"><a href="#section4">The United States</a></dd>
+          <div class="right">
+            <dd data-magellan-arrival="section1"><a href="#section1">World</a></dd>
+            <dd data-magellan-arrival="section2"><a href="#section2">High Income Developed Countries</a></dd>
+            <dd data-magellan-arrival="section3"><a href="#section3">Where the US Falls Short</a></dd>
+            <dd data-magellan-arrival="section4"><a href="#section4">The United States</a></dd>
+          </div>
         </dl>
-        </div>
       </div>
     </nav>
 
 
     <div class="row">
-      <a name="section1"></a>
-      <div class="row">
+
         <h2 data-magellan-destination="section1">World</h2>
-        <p>The information about this section here</p>
-        <h1>Infant Mortality Rate by Country</h1>
-        <p>Note: Probability of dying during the first month of life, expressed per 1,000 live births. Source: <a href="http://data.unicef.org/child-mortality/neonatal.html">UNICEF</a>, 2015.  Roll-over a line to see which Country is plotted.</p>
-      </div>
+        <a name="section1"></a>
+        <h1>Infant Mortality Rates Around the World</h1>
+        <p>4.5 million children a year won't make it to their first birthday. A lot of emphasis is placed on helping developed countries improve their infant mortality rates. The Unites States however has the highest infant morality rate across the high income devloped countries. The reason for this is complex and has a lot to do with the inequality that exists in the United States.</p>
+        <p>Note: The infant mortality rate is the probability of dying during the first year of life, expressed per 1,000 live births.</p>
+
       <div class="container">
         <div id='graphic'>
           <div id='sections'>
             <section class="step">
               <!-- case 0 -->
-              <div class="title">Infant Morality</div>
-              4.5 million children around the world will die before their first birthday.
+              <div class="title">Infant Morality in the World</div>
+              This graph shows the infant mortality in every country since 1950.
             </section>
             <section class="step">
               <!-- case 1 -->
-              <div class="title">In the United States</div>
-              6 in every 1000 children die before their first Birthday
+              <div class="title">The United States</div>
+              Compared to the rest of the world, the United State' infant mortality looks pretty good.
             </section>
             <section class="step">
               <!-- case 2 -->
-              <div class="title">Here is where the United States is compared to the world.</div>
-                It looks like the United States is doing very well compared to the rest of the world.
+              <div class="title">The High Income Developed Countries</div>
+              The United States has the highest infant mortality out of all of the high income developed countries.
             </section>
+            <div id="spacer"></div>
           </div>
           <div id='vis1'></div>
           </div>
         </div>
       </div>
 
-    </div>
 
 
-    <div id="hero_2" class="hero_image_secondary">
-    </div>
+    <!-- <div id="hero_2" class="hero_image_secondary">
+    </div> -->
 
     <div class="row">
-      <a name="section2"></a>
-      <h2 data-magellan-destination="section2">High Income Developed Countries</h2>
 
-      <div id="menu">
-        <select>
-        <option value="1960">1960</button>
-        <option value="1990">1990</option>
-        <option value="2015">2015</option>
-        </select>
+      <h2 data-magellan-destination="section2">High Income Developed Countries</h2>
+      <a name="section2"></a>
+      <h1>How the United States Stacks Up</h1>
+      <p>The United States hasn't always been last. In 1960 the United States was in the middle of the group but as time went on, other countries reduced their infant mortality rate at a faster rate leaving the US in last. Click the buttons to see how the United States stacks up in each year.</p>
+      <div id="buttons_1">
+        <button id="y1960">1960</button>
+        <button id="y1990">1990</button>
+        <button id="y2015">2015</button>
+      </div>
+
+      <div id="changing_bars"></div>
+
     </div>
 
-        <div id="changing_bars">
+    <!-- <div id="hero_3" class="hero_image_secondary">
+    </div> -->
+
+    <div class="row">
+
+      <h2 data-magellan-destination="section3">Where the US Falls Short</h2>
+      <a name="section3"></a>
+      <h1>Why is the Infant Mortality High in the United States</h1>
+      <p>No country in the world has a perfect record. The following charts compare where the high income developed countries fall on a number of factors that play into infant mortality. The United States interestingly spends the highest percentage of its anuall GDP on healthcare and yet it comes last in all of the other factors. </p>
+      <p>Note: Preterm birth rate is the number of babies born before 37 weeks per 100 live births. The GINI Index is a calculation that measures the inequality in a country, the closer to zero a country is the more equal it is considered. Health Care Expenditures is the percent of annual GDP the country spends on healthcare. Adolecent Birth Rate is the number of births to women ages 15–19 per 1,000 women ages 15–19. Obesity rate is the percentage of overweight and obese people out of the population aged 15 years and over. Maternal maortality is number of female deaths per 100,000 live births from any cause related to pregnancy.</p>
+
+
+
+      <div class = "wrapperScatterMultiples">
+        <div class="row">
+          <div id="small_multiples"></div>
+          <div id="buttons">
+            <button id="data1" class="heightButton small-2 columns">Preterm Birth Rate</button>
+            <button id="data2" class="heightButton small-2 columns">GINI Index</button>
+            <button id="data4" class="heightButton small-2 columns">Adolecent Birth Rate</button>
+            <button id="data5" class="heightButton small-2 columns">Obesity</button>
+            <button id="data3" class="heightButton small-2 columns">Health Care Expenditures</button>
+            <button id="data6" class="heightButton small-2 columns">Maternal Mortality</button>
+          </div>
+        </div>
+        <div id="scatter"></div>
+      </div>
+    </div>
+
+    <!-- <div id="hero_4" class="hero_image_secondary">
+    </div> -->
+
+    <div class="row">
+
+      <h2 data-magellan-destination="section4">The United States</h2>
+      <a name="section4"></a>
+      <h1>Infant Mortality in the United States</h1>
+      <p>This section looks at different factors that play into the infant mortality rate in the United States.</p>
+
+      <div class="row">
+
+
+
+        <h3>Infant Mortality by Different Groups</h3>
+        <p>The infant mortality rate looks very different across different groups in the United States. The reason the United States has a higher infant mortality rate is connected to the inequality in the United States and the high preterm birth rate.</p>
+        <div class="small-4 columns">
+          <h4>Mortality by Race</h4>
+          <div id="imrrace"></div>
+          <p>The difference in infant mortality across the different races in the United States is staggering. Black babies are twice as likely to die before their first birthday as any other group.</p>
+        </div>
+        <div class="small-4 columns">
+          <h4>Mortality by Term</h4>
+          <div id="imrterm"></div>
+          <p>Babies born Under 34 weeks are 20 times as likely to die as babies born at full term. The United States has the highest preterm birth rate than any other high income developed country. </p>
+        </div>
+        <div class="small-4 columns">
+          <h4>Mortality by Mother's Age</h4>
+          <div id="imrage"></div>
+          <p>Babies born to teen moms have a lower change of survival. There are several reasons for this. This age group has the higest rate of unintended births and are less likely to recieve adeqate prenatal care.</p>
         </div>
 
-    </div>
-
-    <div id="hero_3" class="hero_image_secondary">
-    </div>
-
-    <div class="row">
-      <a name="section3"></a>
-      <h2 data-magellan-destination="section3">Where the US Falls Short</h2>
-      <h1>Infant Mortality Rate in High Income Countries</h1>
-      <p>A scatter plot comparing the infant mortality rate to other factors.</p>
-      <p id="note">Note: Infant Mortality Rate is the probability of dying between birth and exactly 1 year of age, expressed per 1,000 live births. Source: <a href="http://data.unicef.org/">UNICEF</a>, 2015</p>
-
-      <div id="buttons">
-      <button id="data1">Preterm Birth Rate</button>
-      <button id="data2">GINI Index</button>
-      <button id="data3">Health Care Expenditures</button>
-      <button id="data4">Adolecent Birth Rate</button>
-      <button id="data5">Obesity</button>
-      <button id="data6">Maternal Mortality</button>
       </div>
-      <div id="small_multiples"></div>
-      <div id="scatter"></div>
+
+      <div class="row">
+
+        <h3>Prenatal Care</h3>
+        <p>Prenatal care is important to prevent preterm birth and other complications. Only about 60 percent of women in the United States recieve adequate prenatal care.</p>
+        <div class="small-6 columns">
+          <h4>Percent Recieving Adequate Prenatal Care by Mother's Race</h4>
+          <div id="prenatalrace"></div>
+        </div>
+        <div class="small-6 columns">
+          <h4>Percent Recieving Adequate Prenatal Care by Mother's Age</h4>
+          <div id="prenatalage"></div>
+        </div>
+      </div>
+
+
+      <div class="row">
+      <h4>Top 5 Causes of Infant Deaths</h4>
+      <p>The top causes of death are birth defects, preterm birth (birth before 37 weeks gestation) and low birth weight, Sudden Infant Death Syndrome (SIDS), maternal complications of pregnancy, and injuries. These causes account for about 57% of infant deaths in the United States. </p>
+      <div class="row">
+        <div class="small-6 columns">
+          <div id="causes"></div>
+        </div>
+        <div class="panel small-6 columns">
+          <h4>Quick Facts</h4>
+          <ul>
+            <li>Birth Defects affect every 1 in 33 babies</li>
+            <li>8 Perecent of babies born have a low birthweight</li>
+            <li>Severe maternal morbidity (physical and psychologic conditions resulting from pregnancy complications) affects more than 50,000 women in the United States every year</li>
+            <li>Sudden Infant Death Syndrome is the sudden death of an infant less than 1 year of age that cannot be explained after a thorough investigation is conducted. It is the leading cause of deaths in infants agaes 1 month to one year</li>
+          </ul>
+        </div>
+      </div>
     </div>
 
-    <div id="hero_4" class="hero_image_secondary">
+
+      <h3>Infant Mortality by State</h3>
+
+      <div class="wrapperMapMultiples">
+        <div class="row">
+          <div class="small-9 columns">
+            <p>The infant morality varies greatly by state. Massachussets has the lowest infant mortality at 4.2 and Mississippi has the highest at 9.6. As you haver over the countries the dot plot breaks down the percent of births by each group in the United States and in that state.</p>
+            <div id="map"></div>
+          </div>
+          <div class="panel small-3 columns">
+            <h4>Infant Mortality in Top 20 Most Populous Cities</p>
+            <ol>
+              <li>New York: 4.2</li>
+              <li>Los Angeles: 4.9</li>
+              <li>Chicago: 6.6</li>
+              <li>Houston: 6.8</li>
+              <li>Philadelphia: 9.3</li>
+              <li>Phoenix: 5.6</li>
+              <li>San Antonio: 6.5</li>
+              <li>San Diego: 4.2</li>
+              <li>Dallas: 7.2</li>
+              <li>San Jose: 4</li>
+              <li>Austin: 4.2</li>
+              <li>Jacksonville: 9.6</li>
+              <li>San Francisco: 3.6</li>
+              <li>Indianapolis: 9.2</li>
+              <li>Columbus: 7.9</li>
+              <li>Fort Worth: 8.6</li>
+              <li>Charlotte: 6.5</li>
+              <li>Detroit: 13.4</li>
+              <li>El Paso: 4.8</li>
+              <li>Seattle: 5</li>
+            </ol>
+          </div>
+        </div>
+        <p>Note: Abortion rate is the number of reported legal abortions per 1,000 women ages 15 to 44. Preterm birth rate is the number of babies born before 37 weeks per 100 live births. Healthcare Expenditures is the per capita spending for all privately and publicly funded personal health care services. Children on Medicaid is the percentage of children, ages 0-18, on Medicaid. Uninisured Children is the percentage of children, ages 0-18, uninsured. Poverty Rate is the percent of children living below the federal poverty line. Low Birth weight is the percent of babies born less than 2500 grams.The birth rate is the total number of live births per 1,000 of a population in a year. Obesity rate is the percentage of overweight and obese people out of the population aged 15 years and over. Adolecent Birth Rate is the number of births to women ages 15–19 per 1,000 women ages 15–19. Uninentented Pregnancy is the percent of pregnancies that were not planned.</p>
+        <div id="state_data"></div>
+      </div>
+
+
+
     </div>
-
-    <div class="row">
-      <a name="section4"></a>
-      <h2 data-magellan-destination="section4">The United States</h2>
-      <h1>Infant Mortality Rates by State</h1>
-
-      <p>Source: <a href="http://www.cdc.gov/nchs/deaths.htm">CDC</a>. This data is from 2011-2012.</p>
-      <div id="imrrace"></div>
-      <div id="imrterm"></div>
-      <div id="imrage"></div>
-      <div id="prenatalrace"></div>
-      <div id="prenatalage"></div>
-      <div id="causes"></div>
-      <div id="map"></div>
-      <div id="state_data"></div>
-
-    </div>
-
-    <div id="tooltiptest"></div>
 
 
     <footer>
@@ -200,6 +298,7 @@
     <script src="js/prenatal_age.js"></script>
     <script src="js/pie.js"></script>
     <script src="js/state_data.js"></script>
-    <script src="js/pie_chart_tooltip.js"></script>
+    <!-- <script src="js/pie_chart_tooltip.js"></script> -->
+    <script src="js/line_chart_tooltip.js"></script>
   </body>
 </html>

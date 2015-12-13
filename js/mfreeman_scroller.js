@@ -135,6 +135,7 @@ function scroller() {
       // highlight current step text
       d3.selectAll('.step')
         .style('opacity',  function(d,i) { return i == index ? 1 : 0.1; });
+
       action(index)
   });
     return scroll;

@@ -1,7 +1,20 @@
 (function(){
 
-  var width1 = 700;
-  var height1 = 400;
+  var prettyNames = {
+    imr: "Infant Mortality",
+    preterm: "Preterm Birth Rate",
+    GINI: "GINI Index",
+    adolescent: "Adolescent Birth Rate",
+    obesity: "Obesity Prevelance",
+    healthcare: "Healthcare Expenditures",
+    mmr: "Maternal Mortality Rate",
+  };
+
+  var factor;
+  var value;
+
+  var width1 = 982;
+  var height1 = 500;
   var margin1 = {top: 20, right: 0, bottom: 50, left: 50};
 
 
@@ -36,7 +49,7 @@
 
       d3.select("#data1")
           .on("click", function(d,i) {
-              selected = "first"
+              selected = "preterm"
               draw(data, selected);
               var thisButton = d3.select(this);
               d3.selectAll("button").classed("selected", false);
@@ -44,7 +57,7 @@
           });
       d3.select("#data2")
           .on("click", function(d,i) {
-              selected = "second"
+              selected = "GINI"
               draw(data, selected);
               var thisButton = d3.select(this);
               d3.selectAll("button").classed("selected", false);
@@ -52,7 +65,7 @@
           });
       d3.select("#data3")
           .on("click", function(d,i) {
-              selected = "third"
+              selected = "healthcare"
               draw(data, selected);
               var thisButton = d3.select(this);
               d3.selectAll("button").classed("selected", false);
@@ -60,7 +73,7 @@
           });
       d3.select("#data4")
           .on("click", function(d,i) {
-              selected = "fourth"
+              selected = "adolescent"
               draw(data, selected);
               var thisButton = d3.select(this);
               d3.selectAll("button").classed("selected", false);
@@ -68,7 +81,7 @@
           });
       d3.select("#data5")
           .on("click", function(d,i) {
-              selected = "fifth"
+              selected = "obesity"
               draw(data, selected);
               var thisButton = d3.select(this);
               d3.selectAll("button").classed("selected", false);
@@ -76,7 +89,7 @@
           });
       d3.select("#data6")
           .on("click", function(d,i) {
-              selected = "sixth"
+              selected = "mmr"
               draw(data, selected);
               var thisButton = d3.select(this);
               d3.selectAll("button").classed("selected", false);
@@ -87,7 +100,14 @@
     svg3.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + (height1 - margin1.bottom) + ")")
-      .call(xAxis1);
+      .call(xAxis1)
+      .append("text")
+      .attr("x", width1 - margin1.left - margin1.right)
+      .attr("y", margin1.bottom / 3)
+      .attr("dy", "1em")
+      .style("text-anchor", "end")
+      .attr("class", "label")
+      .text("Infant Mortality Rate");
 
     svg3.append("g")
       .attr("class", "y axis")
@@ -99,13 +119,13 @@
       .await(load);
 
     var data = [];
-    var selected = "first";
+    var selected = "preterm";
 
     function load(error, dataset) {
     if (error) {
       console.log(error);
     } else {
-      console.log(data1);
+      //console.log(data1);
       data = dataset;
 
       draw(data, selected);
@@ -115,7 +135,7 @@
 
     function draw(data, selected) {
 
-      console.log(data);
+      //console.log(data);
       xScale1.domain([
         d3.min(data, function(d) {
           return +d.imr;
@@ -127,34 +147,10 @@
 
       yScale1.domain([
         d3.min(data, function(d) {
-          if (selected == "first"){
-            return +d.preterm;
-          }else if (selected == "second"){
-            return +d.GINI;
-          }else if (selected == "third"){
-            return +d.healthcare;
-          }else if (selected == "fourth"){
-            return +d.adolescent;
-          }else if (selected == "fifth"){
-            return +d.obesity;
-          }else if (selected == "sixth"){
-            return +d.mmr;
-          }
+          return +d[selected];
         }) - 2,
         d3.max(data, function (d) {
-          if (selected == "first"){
-            return +d.preterm;
-          }else if (selected == "second"){
-            return +d.GINI;
-          }else if (selected == "third"){
-            return +d.healthcare;
-          }else if (selected == "fourth"){
-            return +d.adolescent;
-          }else if (selected == "fifth"){
-            return +d.obesity;
-          }else if (selected == "sixth"){
-            return +d.mmr;
-          }
+          return +d[selected];
         }) + 2
       ]);
 
@@ -168,11 +164,12 @@
       circles
         .enter()
         .append("circle")
-        .attr("class", "dots")
-        .append("title")
-        .text(function(d){
-            return d.country
-        });
+        .attr("class", "dots");
+
+        circles
+          .on("mouseover", mouseoverFunc)
+          .on("mousemove", mousemoveFunc)
+          .on("mouseout", mouseoutFunc);
 
 
       circles
@@ -182,23 +179,19 @@
           return xScale1(+d.imr);
         })
         .attr("cy", function(d) {
-          if (selected == "first"){
-            return yScale1(+d.preterm);
-          }else if (selected == "second"){
-            return yScale1(+d.GINI);
-          }else if (selected == "third"){
-            return yScale1(+d.healthcare);
-          }else if (selected == "fourth"){
-            return yScale1(+d.adolescent);
-          }else if (selected == "fifth"){
-            return yScale1(+d.obesity);
-          }else if (selected == "sixth"){
-            return yScale1(+d.mmr);
-          }
+          return yScale1(+d[selected]);
         })
         .attr("r", function() {
             return dotRadius;
-        });
+        })
+        .attr("class", function(d,i){
+          var replacedStrings = d.country.replace(" ","_");
+          if (d.country === 'United States'){
+            return replacedStrings + " usFocus dots";
+          }else{
+            return replacedStrings + " dots";
+          }
+				});
 
 
         // fade out the ones that aren't in the current data set
@@ -229,12 +222,16 @@
 
 
   function mouseoverFunc(d) {
-    // console.log(d);
+    //console.log(d);
+
+    var replacedStrings = d.country.replace(" ","_");
+    d3.selectAll(".wrapperScatterMultiples ." + replacedStrings).classed("hoverFocus",true);
     return tooltip
       .style("display", null) // this removes the display none setting from it
-      .html("<p>" + d.Country +
-            "<br>Infant Mortality Rate: " + d.imr +
-            "<br>Registered Births: " + d.preterm + "%</p>");
+      .html("<p><span class='tooltipTitle'>" + d.country +
+            "</span><span class='tooltipText'><br>Infant Mortality Rate: " + d.imr +
+            "<br>" + prettyNames[selected] + ": " + d[selected]
+              + "</span></p>");
     }
 
   function mousemoveFunc(d) {
@@ -245,6 +242,10 @@
   }
 
   function mouseoutFunc(d) {
+
+    var replacedStrings = d.country.replace(" ","_");
+    d3.selectAll(".wrapperScatterMultiples ." + replacedStrings).classed("hoverFocus",false);
+
     return tooltip.style("display", "none");  // this sets it to invisible!
   }
 

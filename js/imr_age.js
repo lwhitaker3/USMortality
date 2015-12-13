@@ -1,8 +1,8 @@
 (function(){
 
-var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+var margin = {top: 20, right: 10, bottom: 40, left: 40},
+    width = 300 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal()
     .rangeRoundBands([0, width], .1);
@@ -22,7 +22,7 @@ var yAxis = d3.svg.axis()
 var svg = d3.select("#imrage").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom)
-  .append("g")
+    .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 d3.csv("data/age_imr.csv", type, function(error, data) {
@@ -34,7 +34,11 @@ d3.csv("data/age_imr.csv", type, function(error, data) {
   svg.append("g")
       .attr("class", "x axis")
       .attr("transform", "translate(0," + height + ")")
-      .call(xAxis);
+      .call(xAxis)
+      .selectAll("text")
+        .attr("dy", ".5em")
+        .attr("transform", "rotate(-30)")
+        .style("text-anchor", "end");
 
   svg.append("g")
       .attr("class", "y axis")
@@ -42,9 +46,9 @@ d3.csv("data/age_imr.csv", type, function(error, data) {
     .append("text")
       .attr("transform", "rotate(-90)")
       .attr("y", 6)
-      .attr("dy", ".71em")
+      .attr("dy", -30)
       .style("text-anchor", "end")
-      .text("imr");
+      .text("Infant Mortality");
 
   svg.selectAll(".bar")
       .data(data)

@@ -1,8 +1,8 @@
 (function(){
 
 var margin = {top: 20, right: 20, bottom: 30, left: 40},
-    width = 960 - margin.left - margin.right,
-    height = 500 - margin.top - margin.bottom;
+    width = 500 - margin.left - margin.right,
+    height = 300 - margin.top - margin.bottom;
 
 var x = d3.scale.ordinal()
     .rangeRoundBands([0, width], .1);
@@ -41,10 +41,10 @@ d3.csv("data/race_prenatal.csv", type, function(error, data) {
       .call(yAxis)
     .append("text")
       .attr("transform", "rotate(-90)")
-      .attr("y", 6)
+      .attr("y", -34)
       .attr("dy", ".71em")
       .style("text-anchor", "end")
-      .text("percent_adequate");
+      .text("Percent Recieving Adequate Care");
 
   svg.selectAll(".bar")
       .data(data)

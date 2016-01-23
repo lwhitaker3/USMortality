@@ -51,7 +51,7 @@ function getContent(d) {
   var dataRow = countryById.get(d.properties.name);
      if (dataRow) {
          //console.log(dataRow);
-         content = "<p class='tooltipTitle'>" + dataRow.states + ": </p><p class='tooltipText'>" + dataRow.mortality + "</p>";
+         content = "<p class='tooltipTitle'>" + dataRow.states + "</p><p>Infant Mortality: <span class='tooltipText'> " + dataRow.mortality + "</span></p>";
      } else {
          //console.log("no dataRow", d);
          content = d.properties.name + ": No data.";
@@ -59,7 +59,7 @@ function getContent(d) {
      window.setTimeout(function(){
        update_state_tooltip(d.properties.name)
      });
-     return content + '<div id="tooltip_graphs"></div>';
+     return content + "<div><div class='usdot'></div> United States <br> <div class='statedot'></div> " + d.properties.name+ "</div><span class='dotplot_title'>Births by Race</span><span class='dotplot_title'>Births by Age of Mother</span><div id='tooltip_graphs'></div>";
 }
 
 

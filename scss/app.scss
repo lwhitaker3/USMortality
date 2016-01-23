@@ -1,10 +1,11 @@
 //color variables
-$main_color: #FF9900; //orange
+$main_color: #EEA26C; //orange
 $light_color: #FBD5B9;
 $dark_color: #DB6919;
 $dark_grey: #52524E;
-$light_grey: #ADADA4;
-$axis_line: #E6E6E6;
+$light_grey: #B1B5B4;
+$axis_line: #7F8281;
+$white: #ffffff;
 
 
 
@@ -49,7 +50,7 @@ button{
   padding: 4px 4px 0px 4px;
 }
 ol{
-  font-size: .8rem;
+  font-size: 1rem;
 }
 
 
@@ -57,20 +58,27 @@ header{
   height: 100%;
   min-height: 500px;
   h1{
-    color: $white;
+    color: $dark_color;
     margin-top: 0;
-    padding-top: 100px;
+    padding-top: 30px;
     font-size: 4rem;
   }
   p{
-    color: $white;
+    color: $dark_grey;
     margin-top: 0;
     padding: 30px 0;
     font-size: 1.5rem;
     line-height: 1.1;
   }
+  .hero_image .row{
+    position: relative;
+    height: 100%;
+  }
   .textBox{
-    background-color: rgba($dark_grey,.6);
+    background-color: rgba($white,.6);
+    padding: 1.25rem;
+    position: absolute;
+    bottom: 100px;
   }
   .hero_image{
     height: 100%;
@@ -81,32 +89,16 @@ header{
   }
 }
 
-.hero_image_secondary{
-  height: 300px;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  &#hero_2{
-    background-image: url("../img/hero_image-01.png");
-  }
-  &#hero_3{
-    background-image: url("../img/hero_image-01.png");
-  }
-  &#hero_4{
-    background-image: url("../img/hero_image-01.png");
-  }
-}
-
 footer{
-  background-color: $dark_grey;
+  background-color: #E0E0E0;
 
   p{
-    color: black;
+    color: $dark_color;
     margin-bottom: 0;
     margin-top: 20px;
   }
   a{
-    color: lighten($light_grey, 20);
+    color: $dark_grey;
     &:hover{
       color: $dark_color
     }
@@ -126,16 +118,16 @@ footer{
 .axis text {
   font-family: $body_text;
   fill: $dark_grey;
-  font-size: 11px;
+  font-size: 12px;
 }
-.tick text{
-  fill: $light_grey;
 
-}
 .usFocus,
 .bar.usFocus,
 .dots.usFocus{
   fill: $main_color;
+}
+circle.United_States.usFocus.dots{
+  opacity: 1;
 }
 .bar.hoverFocus,
 .dots.hoverFocus{
@@ -161,9 +153,9 @@ footer{
 #sections {
   position: relative;
   //display: inline-block;
-  width: 250px;
+  width: 350px;
   top: 0px;
-  left: 600px;
+  left: 550px;
   z-index: 90;
   padding-bottom: 20px;
   .step {
@@ -171,14 +163,17 @@ footer{
     font-family: $body_text;
     font-size: 16px;
     line-height: 23px;
-    color: $light_grey;
+    color: $dark_grey;
+    padding: 12px;
+    background-color: rgba($white,.8);
+    opacity: 0;
   }
   .title {
     font-family: $body_text;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     margin-bottom: 2px;
-    color: $dark_grey;
+    color: $main_color;
     line-height: 1.2em;
   }
 }
@@ -213,11 +208,14 @@ footer{
     fill: $dark_grey;
   }
 }
-
+#small_multiples{
+  .United_States{
+    fill: $main_color;
+  }
+}
 
 
 .selected{
-  background-color: grey;
   color: white;
   border: none;
 }
@@ -251,7 +249,7 @@ footer{
   fill: none;
   stroke-width: 3px;
   stroke-opacity: 100%;
-  stroke: #FF9900;
+  stroke: $main_color;
 }
 
 
@@ -280,18 +278,18 @@ footer{
 
 .tooltip1 p {
   background-color: rgba(255,255,255,.95);
-  border: 1px $dark_grey solid;
+  border: 2px $light_grey solid;
   border-radius: 2px;
   color: $dark_grey;
   font-family: $body_text;
-  font-size: 13px;
+  font-size: 1rem;
   padding: 4px;
 }
 .tooltip2 {
   position: absolute;
   z-index: 10;
   background-color:rgba(255,255,255,0.95);
-  border: 1px $dark_grey solid;
+  border: 2px $light_grey solid;
   border-radius: 2px;
   color: $dark_grey;
   margin: 5px;
@@ -307,7 +305,7 @@ footer{
   padding: 12px;
   background-color:rgba(255,255,255,0.95);
   color: $dark_grey;
-  border: 1px $dark_grey solid;
+  border: 2px $light_grey solid;
   border-radius: 2px;
   &:after{
     box-sizing: border-box;
@@ -316,14 +314,24 @@ footer{
     font-size: 13px;
     width: 100%;
     line-height: 1;
-    background-color:rgba(255,255,255,0.8);
     content: "\25BC";
     position: absolute;
     text-align: center;
   }
 }
+.column, .columns {
+  padding: 0;
+}
 
-/* Creates a small triangle extender for the tooltip */
+.panel{
+  padding: 1.25rem;
+}
+
+.tooltip2{
+  .xlabel{
+    fill: $dark_grey;
+  }
+}
 
 
 /* Style northward tooltips differently */
@@ -355,8 +363,11 @@ footer{
 .heightButton{
   height: 55px;
   box-sizing: border-box;
+  border-right: solid 1px rgba($white,.8);
 }
-
+.heightButton.selected{
+  background-color: #af5414;
+}
 h3{
   margin-top: 10px;
   color: $dark_color
@@ -378,4 +389,26 @@ line.grid {
 
 line.between {
   stroke: black;
+}
+.dot_legend{
+  color: $dark_grey;
+}
+.usdot{
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: $main_color;
+  display: inline-block;
+}
+.statedot{
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  background-color: $dark_color;
+  display: inline-block;
+}
+.dotplot_title{
+  width: 300px;
+  text-align: center;
+  display: inline-block;
 }

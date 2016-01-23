@@ -180,5 +180,4 @@ var svg = d3.select("#tooltip_graphs").selectAll("svg")
 
 
 
-
 }

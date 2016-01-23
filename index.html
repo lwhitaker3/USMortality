@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation</title>
+    <title>US Infant Mortality Rate</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,300italic,400italic,700|Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
@@ -78,7 +78,7 @@
       <h2 data-magellan-destination="section2">High Income Developed Countries</h2>
       <a name="section2"></a>
       <h1>How the United States Stacks Up</h1>
-      <p>The United States hasn't always been last. In 1960 the United States was in the middle of the group but as time went on, other countries reduced their infant mortality rate at a faster rate leaving the US in last. Click the buttons to see how the United States stacks up in each year.</p>
+      <p>The United States hasn't always been last. In 1960 the United States was in the middle of the group but as time went on, other countries reduced their infant mortality rate at a faster rate leaving the US in last. Click the buttons to see how the United States stacks up each year for infant mortality rate.</p>
       <div id="buttons_1">
         <button id="y1960">1960</button>
         <button id="y1990">1990</button>
@@ -104,6 +104,9 @@
 
       <div class = "wrapperScatterMultiples">
         <div class="row">
+          <h3 id="scatter_title">Infant Mortality vs. Preterm Birth Rate</h3>
+          <div id="scatter"></div>
+
           <div id="small_multiples"></div>
           <div id="buttons">
             <button id="data1" class="heightButton small-2 columns">Preterm Birth Rate</button>
@@ -114,7 +117,7 @@
             <button id="data6" class="heightButton small-2 columns">Maternal Mortality</button>
           </div>
         </div>
-        <div id="scatter"></div>
+
       </div>
     </div>
 
@@ -132,12 +135,12 @@
 
 
 
-        <h3>Infant Mortality by Different Groups</h3>
-        <p>The infant mortality rate looks very different across different groups in the United States. The reason the United States has a higher infant mortality rate is connected to the inequality in the United States and the high preterm birth rate.</p>
+        <h3>Infant Mortality by Different Populations</h3>
+        <p>The infant mortality rate looks very different across different populations in the United States. The reason the United States has a higher infant mortality rate is connected to the inequality in the United States and the high preterm birth rate.</p>
         <div class="small-4 columns">
-          <h4>Mortality by Race</h4>
+          <h4>Mortality by Goups</h4>
           <div id="imrrace"></div>
-          <p>The difference in infant mortality across the different races in the United States is staggering. Black babies are twice as likely to die before their first birthday as any other group.</p>
+          <p>The difference in infant mortality across the different groups in the United States is staggering. Black babies are twice as likely to die before their first birthday as any other group.</p>
         </div>
         <div class="small-4 columns">
           <h4>Mortality by Term</h4>
@@ -194,6 +197,7 @@
           <div class="small-9 columns">
             <p>The infant morality varies greatly by state. Massachussetts has the lowest infant mortality at 4.2 and Mississippi has the highest at 9.6. As you hover over the countries the dot plot breaks down the percent of births by each group in the United States and in that state.</p>
             <div id="map"></div>
+            <div id='test'></div>
           </div>
           <div class="panel small-3 columns">
             <h4>Infant Mortality in Top 20 Most Populous Cities</p>
@@ -224,6 +228,8 @@
         <p>Note: Abortion rate is the number of reported legal abortions per 1,000 women ages 15 to 44. Preterm birth rate is the number of babies born before 37 weeks per 100 live births. Healthcare Expenditures is the per capita spending for all privately and publicly funded personal health care services. Children on Medicaid is the percentage of children, ages 0-18, on Medicaid. Uninsured Children is the percentage of children, ages 0-18, uninsured. Poverty Rate is the percent of children living below the federal poverty line. Low Birth weight is the percent of babies born less than 2500 grams. The birth rate is the total number of live births per 1,000 of a population in a year. Obesity rate is the percentage of overweight and obese people out of the population aged 15 years and over. Adolescent Birth Rate is the number of births to women ages 15–19 per 1,000 women ages 15–19. Unintended Pregnancy is the percent of pregnancies that were not planned.</p>
         <div id="state_data"></div>
       </div>
+
+
 
 
 
@@ -262,7 +268,7 @@
             <li><a href="http://kff.org/other/state-indicator/poverty-rate-by-age/">http://kff.org/other/state-indicator/poverty-rate-by-age/</a></li>
             <li><a href="http://www.cdc.gov/obesity/data/prevalence-maps.html">http://www.cdc.gov/obesity/data/prevalence-maps.html</a></li>
             <li><a href="https://www.census.gov/content/dam/Census/library/publications/2014/acs/acsbr13-02.pdf">https://www.census.gov/content/dam/Census/library/publications/2014/acs/acsbr13-02.pdf</a></li>
-          <ul>
+          </ul>
 
 
       </div>

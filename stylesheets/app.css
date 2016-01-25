@@ -9871,7 +9871,7 @@ footer a:hover {
 }
 
 /* line 130, ../scss/app.scss */
-.dots.usFocus:hover {
+.dots.usFocus.hoverFocus {
   fill: #52524E;
 }
 
@@ -9968,43 +9968,47 @@ circle.United_States.usFocus.dots {
 #small_multiples .United_States {
   fill: #EEA26C;
 }
+/* line 218, ../scss/app.scss */
+#small_multiples .United_States.hoverFocus {
+  fill: #52524E;
+}
 
-/* line 222, ../scss/app.scss */
+/* line 225, ../scss/app.scss */
 .selected {
   color: white;
   border: none;
 }
 
-/* line 227, ../scss/app.scss */
+/* line 230, ../scss/app.scss */
 .states {
   stroke: #fff;
   stroke-width: 1px;
 }
 
-/* line 231, ../scss/app.scss */
+/* line 234, ../scss/app.scss */
 .states:hover {
   opacity: .6;
 }
 
-/* line 235, ../scss/app.scss */
+/* line 238, ../scss/app.scss */
 .legendLinear text {
   font-size: 12px;
 }
 
-/* line 241, ../scss/app.scss */
+/* line 244, ../scss/app.scss */
 .line {
   fill: none;
   stroke-width: 1px;
   stroke-opacity: 70%;
 }
 
-/* line 247, ../scss/app.scss */
+/* line 250, ../scss/app.scss */
 .line.unfocused {
   stroke-opacity: 40%;
   stroke: #999999;
 }
 
-/* line 252, ../scss/app.scss */
+/* line 255, ../scss/app.scss */
 .line.focused {
   fill: none;
   stroke-width: 3px;
@@ -10012,32 +10016,32 @@ circle.United_States.usFocus.dots {
   stroke: #EEA26C;
 }
 
-/* line 263, ../scss/app.scss */
+/* line 266, ../scss/app.scss */
 .title {
   font-size: 20px;
   color: #0099ff;
 }
 
-/* line 268, ../scss/app.scss */
+/* line 271, ../scss/app.scss */
 .labels {
   font-family: sans-serif;
   font-size: 11px;
   fill: black;
 }
 
-/* line 274, ../scss/app.scss */
+/* line 277, ../scss/app.scss */
 .dots {
   fill: #B1B5B4;
   opacity: .6;
 }
 
-/* line 278, ../scss/app.scss */
+/* line 281, ../scss/app.scss */
 .tooltip1 {
   position: absolute;
   z-index: 10;
 }
 
-/* line 283, ../scss/app.scss */
+/* line 286, ../scss/app.scss */
 .tooltip1 p {
   background-color: rgba(255, 255, 255, 0.95);
   border: 2px #B1B5B4 solid;
@@ -10048,7 +10052,7 @@ circle.United_States.usFocus.dots {
   padding: 4px;
 }
 
-/* line 292, ../scss/app.scss */
+/* line 295, ../scss/app.scss */
 .tooltip2 {
   position: absolute;
   z-index: 10;
@@ -10062,12 +10066,12 @@ circle.United_States.usFocus.dots {
   font-size: 13px;
 }
 
-/* line 304, ../scss/app.scss */
+/* line 307, ../scss/app.scss */
 .tooltipText {
   color: #B1B5B4;
 }
 
-/* line 307, ../scss/app.scss */
+/* line 310, ../scss/app.scss */
 .d3-tip {
   line-height: 1;
   padding: 12px;
@@ -10076,7 +10080,7 @@ circle.United_States.usFocus.dots {
   border: 2px #B1B5B4 solid;
   border-radius: 2px;
 }
-/* line 314, ../scss/app.scss */
+/* line 317, ../scss/app.scss */
 .d3-tip:after {
   box-sizing: border-box;
   display: inline;
@@ -10089,30 +10093,30 @@ circle.United_States.usFocus.dots {
   text-align: center;
 }
 
-/* line 326, ../scss/app.scss */
+/* line 329, ../scss/app.scss */
 .column, .columns {
   padding: 0;
 }
 
-/* line 330, ../scss/app.scss */
+/* line 333, ../scss/app.scss */
 .panel {
   padding: 1.25rem;
 }
 
-/* line 335, ../scss/app.scss */
+/* line 338, ../scss/app.scss */
 .tooltip2 .xlabel {
   fill: #52524E;
 }
 
 /* Style northward tooltips differently */
-/* line 342, ../scss/app.scss */
+/* line 345, ../scss/app.scss */
 .d3-tip.n:after {
   margin: -1px 0 0 0;
   top: 100%;
   left: 0;
 }
 
-/* line 347, ../scss/app.scss */
+/* line 350, ../scss/app.scss */
 .tooltipTitle {
   line-height: 1;
   font-size: 1.3rem;
@@ -10121,7 +10125,7 @@ circle.United_States.usFocus.dots {
   margin-bottom: 4px;
 }
 
-/* line 354, ../scss/app.scss */
+/* line 357, ../scss/app.scss */
 .tooltipText {
   line-height: 1;
   color: #DB6919;
@@ -10129,56 +10133,56 @@ circle.United_States.usFocus.dots {
   margin-bottom: 4px;
 }
 
-/* line 363, ../scss/app.scss */
+/* line 366, ../scss/app.scss */
 .axis {
   font: 10px sans-serif;
 }
 
-/* line 367, ../scss/app.scss */
+/* line 370, ../scss/app.scss */
 .heightButton {
   height: 55px;
   box-sizing: border-box;
   border-right: solid 1px rgba(255, 255, 255, 0.8);
 }
 
-/* line 372, ../scss/app.scss */
+/* line 375, ../scss/app.scss */
 .heightButton.selected {
   background-color: #af5414;
 }
 
-/* line 375, ../scss/app.scss */
+/* line 378, ../scss/app.scss */
 h3 {
   margin-top: 10px;
   color: #DB6919;
 }
 
-/* line 380, ../scss/app.scss */
+/* line 383, ../scss/app.scss */
 .row .row {
   margin: 0;
 }
 
-/* line 385, ../scss/app.scss */
+/* line 388, ../scss/app.scss */
 circle:hover {
   fill: #52524E;
   opacity: 1;
 }
 
-/* line 390, ../scss/app.scss */
+/* line 393, ../scss/app.scss */
 line.grid {
   stroke: #eee;
 }
 
-/* line 394, ../scss/app.scss */
+/* line 397, ../scss/app.scss */
 line.between {
   stroke: black;
 }
 
-/* line 397, ../scss/app.scss */
+/* line 400, ../scss/app.scss */
 .dot_legend {
   color: #52524E;
 }
 
-/* line 400, ../scss/app.scss */
+/* line 403, ../scss/app.scss */
 .usdot {
   border-radius: 50%;
   width: 12px;
@@ -10187,7 +10191,7 @@ line.between {
   display: inline-block;
 }
 
-/* line 407, ../scss/app.scss */
+/* line 410, ../scss/app.scss */
 .statedot {
   border-radius: 50%;
   width: 12px;
@@ -10196,7 +10200,7 @@ line.between {
   display: inline-block;
 }
 
-/* line 414, ../scss/app.scss */
+/* line 417, ../scss/app.scss */
 .dotplot_title {
   width: 300px;
   text-align: center;

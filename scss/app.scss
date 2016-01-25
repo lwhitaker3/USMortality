@@ -215,6 +215,9 @@ circle.United_States.usFocus.dots{
 #small_multiples{
   .United_States{
     fill: $main_color;
+    &.hoverFocus{
+      fill: $dark_grey;
+    }
   }
 }
 

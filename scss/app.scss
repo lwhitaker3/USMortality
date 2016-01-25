@@ -126,6 +126,10 @@ footer{
 .dots.usFocus{
   fill: $main_color;
 }
+
+.dots.usFocus:hover{
+  fill: $dark_grey;
+}
 circle.United_States.usFocus.dots{
   opacity: 1;
 }

@@ -72,7 +72,8 @@
               var thisButton = d3.select(this);
               d3.selectAll("button").classed("selected", false);
               thisButton.classed("selected", true);
-              $("#scatter_title").text("Infant Mortality vs. Adolescent Birth Rate");
+              $("#scatter_title").text("Infant Mortality vs. Health Care Expenditures");
+
           });
 
       d3.select("#data4")
@@ -82,7 +83,8 @@
               var thisButton = d3.select(this);
               d3.selectAll("button").classed("selected", false);
               thisButton.classed("selected", true);
-              $("#scatter_title").text("Infant Mortality vs. Obesity");
+              $("#scatter_title").text("Infant Mortality vs. Adolescent Birth Rate");
+
 
           });
       d3.select("#data5")
@@ -92,7 +94,7 @@
               var thisButton = d3.select(this);
               d3.selectAll("button").classed("selected", false);
               thisButton.classed("selected", true);
-              $("#scatter_title").text("Infant Mortality vs. Health Care Expenditures");
+              $("#scatter_title").text("Infant Mortality vs. Obesity");
           });
       d3.select("#data6")
           .on("click", function(d,i) {
